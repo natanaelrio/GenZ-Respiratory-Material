@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "HIDUNG",
+        "urlgambar": "/hidung.jpg",
+        "detail": "Hidung, yang tersusun dari selaput lendir dan rambut halus. Fungsinya untuk menyaring debu dan kotoran yang masuk ke rongga hidung. Sinus, rongga yang isinya udara dan berada pada sepanjang sisi hidung. Bagian ini berfungsi untuk mengatur suhu dan kelembapan udara yang dihirup."
+    },
+    {
+        "id": 2,
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "FARING",
+        "urlgambar": "/faring.jpg",
+        "detail": "Faring, organ pada sistem respirasi yang bertugas untuk menyalurkan udara dari hidung maupun mulut untuk menuju ke trakea. Laring, bagian berupa ruang kecil sebelum trakea yang isinya adalah pita suara."
+    },
+    {
+        "id": 3,
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "LARING",
+        "urlgambar": "/laring.jpg",
+        "detail": "Laring adalah saluran pernapasan yang membawa udara menuju ke trakea. Fungsi utama laring adalah untuk melindungi saluran pernapasan dibawahnya dengan cara menutup secara cepat pada stimulasi mekanik, sehingga mencegah masuknya benda asing ke dalam saluran napas."
+    },
+    {
+        "id": 4,
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "TRAKEA",
+        "urlgambar": "/trakea.jpg",
+        "detail": "Fungsi trakea dalam sistem pernapasan adalah sebagai jalur masuknya udara ke paru-paru. Trakea merupakan penghubung laring dengan bronkus. Jadi, udara yang masuk, baik melalui mulut atau hidung, akan melewati laring lalu menuju ke trakea dan dilanjutkan ke bronkus."
+    },
+    {
+        "id": 5,
+        "gridgambar": "1/2/1/3",
+        "gridareadetail": "1/1/1/2",
+        "judul": "BRONKUS",
+        "urlgambar": "/bronkus.jpg",
+        "detail": "Bronkus merupakan organ dalam sistem pernapasan yang menjadi penghubung batang tenggorokan/trakea dengan paru-paru. Fungsi bronkus dalam sistem pernapasan cukup penting, salah satunya adalah memastikan aliran udara masuk dan keluar paru-paru."
+    },
+    {
+        "id": 6,
+        "gridgambar": "1/2/1/3",
+        "gridareadetail": "1/1/1/2",
+        "judul": "PARU-PARU",
+        "urlgambar": "/paruparu.jpeg",
+        "detail": "Fungsi paru-paru dalam sistem pernapasan berikutnya adalah menjadi tempat pertukaran gas oksigen dan karbon dioksida. Proses ini terjadi pada salah satu bagian paru-paru, yaitu alveolus. Oksigen yang masuk bersama udara akan diangkut oleh aliran darah dan diedarkan ke seluruh tubuh."
+    },
+    {
+        "id": 7,
+        "gridgambar": "1/2/1/3",
+        "gridareadetail": "1/1/1/2",
+        "judul": "DIAFRAGMA",
+        "urlgambar": "/diafragma.jpg",
+        "detail": "Fungsi Diafragma yaitu memudahkan udara atau oksigen bergerak masuk menuju paru-paru, karena tekanan pada rongga dada akan turun secara mendadak. Sementara itu, ketika mengembuskan napas, diafragma akan mengendur dan membuat ukuran paru-paru turut mengecil."
+    }
+]

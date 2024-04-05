@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "value": "soal1",
+        "button": "Lanjutkan",
+        "soal": "1. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 2,
+        "value": "soal2",
+        "button": "Lanjutkan",
+        "soal": "2. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 3,
+        "value": "soal3",
+        "button": "Lanjutkan",
+        "soal": "3. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 4,
+        "value": "soal4",
+        "button": "Lanjutkan",
+        "soal": "4. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 5,
+        "value": "soal5",
+        "button": "Lanjutkan",
+        "soal": "5. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 6,
+        "value": "soal6",
+        "button": "Lanjutkan",
+        "soal": "6. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 7,
+        "value": "soal7",
+        "button": "Lanjutkan",
+        "soal": "7. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 8,
+        "value": "soal8",
+        "button": "Lanjutkan",
+        "soal": "8. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 9,
+        "value": "soal9",
+        "button": "Lanjutkan",
+        "soal": "9. Lorem ipsum dolor sit amet."
+    },
+    {
+        "id": 10,
+        "value": "soal5",
+        "button": "Akhiri",
+        "soal": "10. Lorem ipsum dolor sit amet."
+    }
+]
