@@ -329,7 +329,7 @@
     }
 
     .detail .gambardetail img {
-        width: 200px;
+        width: -webkit-fill-available
     }
 
     .gambar .hidung {
