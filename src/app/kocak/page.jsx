@@ -1,4 +1,5 @@
 import Jawaban from "@/component/jawaban";
+export const dynamic = 'force-dynamic'
 
 async function GetListProductID() {
     const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/get-jawaban`, {
