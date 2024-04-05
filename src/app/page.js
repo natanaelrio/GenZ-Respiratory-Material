@@ -1,4 +1,5 @@
 import HalamanUtama from '@/component/halamanutama'
+export const dynamic = 'force-dynamic'
 
 export const metadata = {
   title: 'ORGAN PERNAFASAN MANUSIA',
