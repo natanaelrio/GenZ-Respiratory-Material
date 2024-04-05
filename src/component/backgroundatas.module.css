@@ -1,7 +1,7 @@
 .atas {
     height: 100px;
     width: 100%;
-    background-color: red;
+    background-color: var(--colorsoal);
     margin-bottom: 20px;
 }
 
