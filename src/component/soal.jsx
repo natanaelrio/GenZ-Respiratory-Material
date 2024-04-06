@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import styles from '@/component/namaSoal.module.css'
 import BackgroundAtas from '@/component/backgroundAtas';
 import { useBearStore } from '@/zustand/store'
@@ -43,7 +43,7 @@ export default function Soal({ data, uidparam, dataUser }) {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        setIsiForm('')
+        // setIsiForm('')
         const sukses = () => {
             setPageNumber(pageNumber + 1)
             setIsLoading(false)
@@ -62,227 +62,35 @@ export default function Soal({ data, uidparam, dataUser }) {
         }
         if (isiForm != '') {
             setIsLoading(true)
-            if (pageNumber == 1) {
-                const dataku = {
-                    soal1: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
+            setValidasi(false)
 
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
+            const dataku = pageNumber == 1 && { soal1: isiForm } ||
+                pageNumber == 2 && { soal2: isiForm } ||
+                pageNumber == 3 && { soal3: isiForm } ||
+                pageNumber == 4 && { soal4: isiForm } ||
+                pageNumber == 5 && { soal5: isiForm } ||
+                pageNumber == 6 && { soal6: isiForm } ||
+                pageNumber == 7 && { soal7: isiForm } ||
+                pageNumber == 8 && { soal8: isiForm } ||
+                pageNumber == 9 && { soal9: isiForm } ||
+                pageNumber == 10 && { soal10: isiForm, selesai: true }
 
+            try {
+                const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
+                    method: 'PUT',
+                    body: JSON.stringify(dataku),
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': process.env.NEXT_PUBLIC_SECREET
+                    },
+                    next: { revalidate: 0 }
+
+                })
+                const data = await res.json()
+                data?.status == 200 && sukses() || pageNumber == 10 && setOpenTrimaKasih(true)
             }
-            if (pageNumber == 2) {
-                const dataku = {
-                    soal2: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 3) {
-                const dataku = {
-                    soal3: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 4) {
-                const dataku = {
-                    soal4: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 5) {
-                const dataku = {
-                    soal5: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 6) {
-                const dataku = {
-                    soal6: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 7) {
-                const dataku = {
-                    soal7: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 8) {
-                const dataku = {
-                    soal8: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 9) {
-                const dataku = {
-                    soal9: isiForm
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses()
-                }
-                catch (e) {
-                    gagal()
-                }
-            }
-            if (pageNumber == 10) {
-                const dataku = {
-                    soal10: isiForm,
-                    selesai: Boolean(true)
-                }
-                try {
-                    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/put-identitassoal?id=${uidparam}`, {
-                        method: 'PUT',
-                        body: JSON.stringify(dataku),
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'Authorization': process.env.NEXT_PUBLIC_SECREET
-                        },
-                        next: { revalidate: 0 }
-
-                    })
-                    const data = await res.json()
-                    data?.status == 200 && sukses() || setOpenTrimaKasih(true)
-                }
-                catch (e) {
-                    gagal()
-                }
+            catch (e) {
+                gagal()
             }
         }
     }
