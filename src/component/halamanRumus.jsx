@@ -38,14 +38,20 @@ export default function HalamanRumus() {
                     </div>
                     <div className={styles.judul}>
                         <h1>
-                            
+                            ORGAN PERNAFASAN MANUSIA
                         </h1>
                     </div>
                     <div></div>
                 </div>
             </div> */}
-            <LayoutHeaderFooter judul={'ORGAN PERNAFASAN MANUSIA'} >
+            <LayoutHeaderFooter judul={''} kondisi={true} >
+
                 <main className={styles.main} style={{ height: panjang - 100 }}>
+                    <div className={styles.judul}>
+                        <h1>
+                            ORGAN PERNAFASAN MANUSIA
+                        </h1>
+                    </div>
                     <div className={styles.grid} style={open ? { gridTemplateColumns: '1fr 1fr' } : {}}>
                         <div className={styles.gambarluar} style={gridAreaGambar ? { gridArea: gridAreaGambar } : {}}>
                             <div className={styles.gambar} >
