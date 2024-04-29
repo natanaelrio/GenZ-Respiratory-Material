@@ -6,7 +6,6 @@ import { FaArrowLeft } from "react-icons/fa";
 
 export default function LayoutHeaderFooter({ children, kondisi }) {
     const router = useRouter()
-
     return (
         <div className={styles.container}>
             <header className={styles.header}>
