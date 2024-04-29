@@ -1,4 +1,5 @@
-import HalamanUtama from '@/component/halamanutama'
+import HalamanHomeBaru from '@/component/halamanHomeBaru'
+import LayoutHeaderFooter from '@/component/layoutHeaderFooter'
 
 export const metadata = {
   title: 'ORGAN PERNAFASAN MANUSIA',
@@ -7,6 +8,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <HalamanUtama />
+    <LayoutHeaderFooter kondisi={false}>
+      <HalamanHomeBaru />
+    </LayoutHeaderFooter>
   )
 }

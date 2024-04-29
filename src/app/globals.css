@@ -1,9 +1,11 @@
 :root {
-  --colormain: #6D5FB4;
-  --colordua: #E6618C;
+  --colormain: #fff3e5;
+  --colordua: #ff6142;
   --colorputih: #fff;
   --coloryellow: yellow;
-  --colorsoal: #16214f
+  --colorsoal: #16214f;
+  --colorgrey: #696f72;
+  --colormainsoal: #6D5FB4
 }
 
 * {
@@ -11,10 +13,15 @@
   scroll-behavior: smooth;
   margin: 0;
   box-sizing: border-box;
+  letter-spacing: 1.04px;
+  /* overflow: hidden; */
+  text-decoration: none;
+  border: 0;
 }
 
 body {
+  color: #00080a;
   /* background-blend-mode: hard-light; */
-  background-image: linear-gradient(180deg, #a78cdc 0, #6c5eba 30%, #1e3599 100%);
+  /* background-image: linear-gradient(180deg, #a78cdc 0, #6c5eba 30%, #1e3599 100%); */
   background-repeat: no-repeat;
 }

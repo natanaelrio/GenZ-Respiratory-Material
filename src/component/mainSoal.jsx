@@ -26,7 +26,7 @@ export default function MainSoal({ uidparam }) {
             setDataUser(data2)
         }
         FetchMain()
-    }, [])
+    }, [uidparam])
 
 
     return (

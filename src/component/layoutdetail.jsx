@@ -1,4 +1,4 @@
-import styles from '@/component/halamanUtama.module.css'
+import styles from '@/component/halamanRumus.module.css'
 import Image from 'next/image';
 import { useBearStore } from '@/zustand/store'
 import { motion } from "framer-motion"

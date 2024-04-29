@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    min-height: 100dvh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background-color: var(--colormain);
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.header .kiri {
+    width: 150px;
+    height: 30px;
+}
+
+.header .kiri img {
+    width: 100% !important;
+    height: 30px;
+    background-position: center;
+    object-fit: contain;
+}
+
+.header button {
+    border: 0;
+    height: 30px;
+    padding: 0 24px;
+    background-color: var(--colordua);
+    color: var(--colorputih);
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.bawah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
