@@ -1,5 +1,5 @@
 'use client'
-import styles from '@/component/halamanRumus.module.css'
+import styles from '@/component/halamanMateri.module.css'
 import Image from 'next/image';
 import LayoutDetail from './layoutdetail';
 import { useEffect, useState } from 'react';
@@ -7,7 +7,7 @@ import { useBearStore } from '@/zustand/store'
 import { useRouter } from 'next/navigation';
 import LayoutHeaderFooter from './layoutHeaderFooter';
 
-export default function HalamanRumus() {
+export default function HalamanMateri() {
     const router = useRouter()
 
     const open = useBearStore((state) => state.open)

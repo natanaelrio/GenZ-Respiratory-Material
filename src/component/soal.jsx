@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react'
 import styles from '@/component/namaSoal.module.css'
 import BackgroundAtas from '@/component/backgroundAtas';
@@ -5,10 +6,11 @@ import { useBearStore } from '@/zustand/store'
 import TerimaKasih from '@/component/terimakasih';
 import { IoIosArrowBack } from "react-icons/io";
 import BeatLoader from "react-spinners/BeatLoader";
+import { useRouter } from 'next/navigation';
 
-export default function Soal({ data, uidparam, dataUser }) {
+export default function Soal({ data, uidparam, dataUser, color, kondisiAwal, kondisiAkhir, kondisi }) {
     const [pageNumber, setPageNumber] = useState(1)
-
+    const router = useRouter()
     const openTerimaKasih = useBearStore((state) => state.openTerimaKasih)
     const setOpenTrimaKasih = useBearStore((state) => state.setOpenTrimaKasih)
 
@@ -87,7 +89,16 @@ export default function Soal({ data, uidparam, dataUser }) {
 
                 })
                 const data = await res.json()
-                data?.status == 200 && sukses() || pageNumber == 10 && setOpenTrimaKasih(true)
+
+                const awal = () => {
+                    pageNumber == 10 && router.push('/pilihan')
+                }
+
+                const akhir = () => {
+                    pageNumber == 10 && setOpenTrimaKasih(true)
+                }
+
+                data?.status == 200 && sukses() || kondisiAwal && awal() || kondisiAkhir && akhir()
             }
             catch (e) {
                 gagal()
@@ -95,12 +106,13 @@ export default function Soal({ data, uidparam, dataUser }) {
         }
     }
 
-
     return (
         <>
             {openTerimaKasih ? <TerimaKasih /> :
-                <form className={styles.main} onSubmit={handleSubmit}>
-                    <BackgroundAtas />
+                <form className={styles.main}
+                    style={{ backgroundColor: color }}
+                    onSubmit={handleSubmit}>
+                    {kondisiAkhir && <BackgroundAtas color={color} />}
                     <div className={styles.dalammain} >
                         <label style={{ fontSize: '30px' }} htmlFor="Soal1">{soal} {validasi ? (
                             <span style={{ color: 'red' }}>*</span>
@@ -124,7 +136,7 @@ export default function Soal({ data, uidparam, dataUser }) {
                         <div className={styles.page}>{pageNumber}/10</div>
                         {isGagal && <p style={{ color: 'red' }}>Ulang Kirim*</p>}
                         <div className={styles.bawah}>
-                            {pageNumber > 1 && <button style={{ width: '10%', background: 'var(--colordua)' }} disabled={isLoading} onClick={handleKembali}><IoIosArrowBack /></button>}
+                            {pageNumber > 1 && <button style={{ width: '10%', background: 'var(--coloryellow)', color: 'black' }} disabled={isLoading} onClick={handleKembali}><IoIosArrowBack /></button>}
                             <button disabled={isLoading} type="submit"> {isLoading ? <BeatLoader size={20} color={'var(--colordua)'} /> : button} </button>
                         </div>
                     </div>

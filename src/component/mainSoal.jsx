@@ -4,9 +4,8 @@ import { useBearStore } from '@/zustand/store'
 import Soal from '@/component/soal'
 import Nama from '@/component/nama'
 
-export default function MainSoal({ uidparam }) {
+export default function MainSoal({ uidparam, color, kondisiAwal, kondisiAkhir, kondisi }) {
     const openSoal = useBearStore((state) => state.openSoal)
-
     const [dataSoal, setDataSoal] = useState([])
     const [dataUser, setDataUser] = useState([])
     useEffect(() => {
@@ -20,7 +19,8 @@ export default function MainSoal({ uidparam }) {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': process.env.NEXT_PUBLIC_SECREET
-                }
+                },
+                next: { revalidate: 0 }
             })
             const data2 = await resUser.json()
             setDataUser(data2)
@@ -28,10 +28,21 @@ export default function MainSoal({ uidparam }) {
         FetchMain()
     }, [uidparam])
 
-
     return (
         <>
-            {openSoal ? <Soal dataUser={dataUser} data={dataSoal} uidparam={uidparam} /> : <Nama />}
+            {openSoal ? <Soal
+                dataUser={dataUser}
+                data={dataSoal}
+                uidparam={uidparam}
+                color={color}
+                kondisiAwal={kondisiAwal}
+                kondisiAkhir={kondisiAkhir}
+                kondisi={kondisi}
+            /> : <Nama
+                color={color}
+                kondisiAwal={kondisiAwal}
+                kondisiAkhir={kondisiAkhir}
+            />}
         </>
     )
 }

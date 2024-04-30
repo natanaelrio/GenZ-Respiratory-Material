@@ -6,6 +6,7 @@
     align-items: center;
     position: relative;
     /* height: 100; */
+    z-index: 1;
 }
 
 .dalammain {
@@ -91,7 +92,6 @@
     background-color: var(--colorputih);
     color: black;
 }
-
 
 .icon {
     position: absolute;

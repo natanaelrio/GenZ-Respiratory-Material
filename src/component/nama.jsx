@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useFormik } from 'formik';
 import styles from '@/component/namaSoal.module.css'
 import * as Yup from 'yup';
@@ -8,7 +8,7 @@ import { useRouter, useSearchParams } from 'next/navigation'
 import { v4 as uuidv4 } from 'uuid';
 import BeatLoader from "react-spinners/BeatLoader";
 
-export default function Nama() {
+export default function Nama({ color, kondisiAwal, kondisiAkhir }) {
     const router = useRouter()
     const uidUser = uuidv4()
     const setOpenSoal = useBearStore((state) => state.setOpenSoal)
@@ -66,7 +66,8 @@ export default function Nama() {
                     setIsLoading(false)
                     setOpenSoal(true)
                     setIsGagal(false)
-                    router.push(`/soal/${uidUser}`)
+                    kondisiAwal && router.push(`/soalpertama/${uidUser}`)
+                    kondisiAkhir && router.push(`/soal/${uidUser}`)
                 }
 
                 const gagal = () => {
@@ -80,14 +81,14 @@ export default function Nama() {
                 setIsLoading(false)
                 setIsGagal(true)
             }
-
-
-
         },
     });
     return (
-        <form className={styles.main} onSubmit={formik.handleSubmit}>
-            <BackgroundAtas />
+        <form className={styles.main}
+            style={{ backgroundColor: color }}
+            onSubmit={formik.handleSubmit}
+        >
+            {kondisiAkhir && <BackgroundAtas color={color} />}
             <div className={styles.dalammain}>
                 <label htmlFor="nama">Nama {formik.touched.nama && formik.errors.nama ? (
                     <span style={{ color: 'red' }}>*</span>

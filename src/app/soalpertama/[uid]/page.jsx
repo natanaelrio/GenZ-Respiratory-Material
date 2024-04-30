@@ -6,13 +6,13 @@ export const metadata = {
     description: 'SOAL ORGAN PERNAFASAN MANUSIA',
 }
 
-export default function Soalnya({ params }) {
+export default function SoalPertama({ params }) {
     return (
         <LayoutHeaderFooter kondisi={false}>
             <MainSoal
                 uidparam={params.uid}
-                kondisiAkhir={true}
-                kondisi={false} />
+                color={'var(--colordua)'}
+                kondisiAwal={true} />
         </LayoutHeaderFooter>
     )
 }

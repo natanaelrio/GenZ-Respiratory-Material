@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <LayoutHeaderFooter kondisi={false}>
+    <LayoutHeaderFooter kondisi={false} bg={true}>
       <HalamanHomeBaru />
     </LayoutHeaderFooter>
   )

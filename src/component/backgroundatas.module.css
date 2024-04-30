@@ -3,6 +3,7 @@
     width: 100%;
     background-color: var(--colorsoal);
     margin-bottom: 20px;
+    position: relative;
 }
 
 .atas img {
@@ -10,4 +11,14 @@
     width: 100%;
     object-fit: cover;
     object-position: bottom;
+}
+
+.atas .bg {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 23;
+    top: 0;
+    background-color: var(--colorsoal);
 }

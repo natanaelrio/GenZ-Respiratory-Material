@@ -12,7 +12,7 @@
 .container .text {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--colorputih);
+    color: var(--colordua);
     background-color: var(--colormain);
     padding: 10px;
     z-index: 1;
