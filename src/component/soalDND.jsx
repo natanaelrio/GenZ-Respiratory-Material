@@ -18,7 +18,6 @@ import TerimaKasih from "@/component/terimakasih";
 export default function SoalDND() {
 
     const [terimakasih, setTerimaKasih] = useState(null)
-    console.log(terimakasih);
 
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {

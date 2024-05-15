@@ -1,4 +1,5 @@
 import MainSoal from "@/component/mainSoal";
+export const dynamic = "force-dynamic";
 
 export const metadata = {
     title: 'SOAL ORGAN PERNAFASAN MANUSIA',
