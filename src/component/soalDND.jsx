@@ -13,7 +13,6 @@ import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 import { Column } from "@/component/Column";
 import styles from '@/component/soalDND.module.css'
 import TerimaKasih from "@/component/terimakasih";
-// import { Input } from "@/component/";
 
 export default function SoalDND() {
 

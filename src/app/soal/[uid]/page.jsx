@@ -15,7 +15,6 @@ async function getSoalABCD() {
     return data;
 }
 
-
 export default async function Soalnya({ params }) {
     const questions = await getSoalABCD();
     return (
