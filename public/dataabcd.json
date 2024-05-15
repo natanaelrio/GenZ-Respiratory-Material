@@ -1,0 +1,242 @@
+[
+    {
+        "question": "1. Apa peran utama diafragma dalam proses pernapasan?",
+        "options": [
+            "a. Menghasilkan oksigen",
+            "b. Memfilter udara yang masuk ke paru-paru",
+            "c. Menjaga kelancaran sistem pernapasan",
+            "d. Memengaruhi proses pencernaan"
+        ],
+        "answer": "c. Menjaga kelancaran sistem pernapasan"
+    },
+    {
+        "question": "2. Di mana letak diafragma dalam tubuh manusia?",
+        "options": [
+            "a. Di rongga kepala",
+            "b. Di rongga mulut",
+            "c. Di antara rongga dada dan rongga perut",
+            "d. Di rongga panggul"
+        ],
+        "answer": "c. Di antara rongga dada dan rongga perut"
+    },
+    {
+        "question": "3. Apa yang terjadi pada diafragma ketika seseorang menarik napas?",
+        "options": [
+            "a. Diafragma melengkung ke atas",
+            "b. Diafragma menekan ke bawah",
+            "c. Diafragma tetap diam",
+            "d. Diafragma bergerak ke samping"
+        ],
+        "answer": "b. Diafragma menekan ke bawah"
+    },
+    {
+        "question": "4. Bagaimana diafragma memengaruhi proses pernapasan?",
+        "options": [
+            "a. Diafragma menghasilkan oksigen",
+            "b. Diafragma membantu mengatur suhu tubuh",
+            "c. Diafragma mengatur aliran darah",
+            "d. Diafragma membantu mengubah volume rongga dada untuk memungkinkan masuknya udara"
+        ],
+        "answer": "d. Diafragma membantu mengubah volume rongga dada untuk memungkinkan masuknya udara"
+    },
+    {
+        "question": "5. Apa yang terjadi pada diafragma saat kita membuang napas?",
+        "options": [
+            "a. Diafragma menekan ke bawah",
+            "b. Diafragma melengkung ke atas",
+            "c. Diafragma mengatur suhu tubuh",
+            "d. Diafragma tetap diam"
+        ],
+        "answer": "b. Diafragma melengkung ke atas"
+    },
+    {
+        "question": "7. Mengapa oksigen penting bagi tubuh manusia?",
+        "options": [
+            "a. Oksigen membantu mengatur suhu tubuh",
+            "b. Oksigen adalah gas yang dikeluarkan saat bernapas",
+            "c. Oksigen digunakan oleh tubuh untuk tetap hidup",
+            "d. Oksigen adalah penyebab utama penyakit pernapasan"
+        ],
+        "answer": "c. Oksigen digunakan oleh tubuh untuk tetap hidup"
+    },
+    {
+        "question": "8. Apa yang dimaksud dengan karbon dioksida dalam konteks pernapasan?",
+        "options": [
+            "a. Karbon dioksida adalah gas yang digunakan untuk menghasilkan suara",
+            "b. Karbon dioksida adalah gas yang diperlukan untuk mengatur suhu tubuh",
+            "c. Karbon dioksida adalah salah satu gas yang dikeluarkan dari dalam tubuh saat bernapas",
+            "d. Karbon dioksida adalah gas yang digunakan untuk menyaring udara"
+        ],
+        "answer": "c. Karbon dioksida adalah salah satu gas yang dikeluarkan dari dalam tubuh saat bernapas"
+    },
+    {
+        "question": "9. Apa yang akan terjadi jika pertukaran antara oksigen dan karbon dioksida di alveolus terganggu?",
+        "options": [
+            "a. Tubuh akan menghasilkan lebih banyak oksigen",
+            "b. Tubuh akan menghasilkan lebih banyak karbon dioksida",
+            "c. Tubuh akan mengalami gangguan pencernaan",
+            "d. Tubuh akan mengalami masalah pernapasan"
+        ],
+        "answer": "d. Tubuh akan mengalami masalah pernapasan"
+    },
+    {
+        "question": "10. Di mana tempat pertukaran antara oksigen dan karbon dioksida terjadi di dalam tubuh manusia?",
+        "options": [
+            "a. Di jantung",
+            "b. Di hati",
+            "c. Di otak",
+            "d. Di alveolus dalam paru-paru"
+        ],
+        "answer": "d. Di alveolus dalam paru-paru"
+    },
+    {
+        "question": "11. Apa nama bagian di dalam paru-paru yang berbentuk seperti gelembung dan bertanggung jawab untuk pertukaran gas?",
+        "options": [
+            "a. Bronkus",
+            "b. Trakea",
+            "c. Laring",
+            "d. Alveolus"
+        ],
+        "answer": "d. Alveolus"
+    },
+    {
+        "question": "12. Apa peran utama faring dalam sistem pernapasan?",
+        "options": [
+            "a. Menghasilkan oksigen",
+            "b. Mengatur suhu tubuh",
+            "c. Memproduksi karbon dioksida",
+            "d. Menghubungkan hidung dengan paru-paru"
+        ],
+        "answer": "d. Menghubungkan hidung dengan paru-paru"
+    },
+    {
+        "question": "13. Apa yang terjadi ketika udara dan makanan bertemu di faring?",
+        "options": [
+            "a. Udara dan makanan saling menolak satu sama lain",
+            "b. Makanan dan minuman dihancurkan oleh faring",
+            "c. Faring memastikan makanan dan minuman tidak campur dengan udara",
+            "d. Makanan dan minuman masuk ke dalam paru-paru"
+        ],
+        "answer": "c. Faring memastikan makanan dan minuman tidak campur dengan udara"
+    },
+    {
+        "question": "14. Apa yang terjadi ketika kita bersin atau batuk?",
+        "options": [
+            "a. Kita mengatur suhu tubuh",
+            "b. Kita membersihkan hidung",
+            "c. Kita mengeluarkan udara dari paru-paru",
+            "d. Kita menghentikan aliran darah"
+        ],
+        "answer": "c. Kita mengeluarkan udara dari paru-paru"
+    },
+    {
+        "question": "15. Apa nama organ yang terlibat dalam proses pernapasan setelah udara meninggalkan faring?",
+        "options": [
+            "a. Hidung",
+            "b. Mata",
+            "c. Paru-paru",
+            "d. Laring"
+        ],
+        "answer": "d. Laring"
+    },
+    {
+        "question": "16. Apa peran utama tenggorokan dalam sistem pernapasan manusia?",
+        "options": [
+            "a. Menghasilkan oksigen",
+            "b. Menyaring kotoran dari udara",
+            "c. Memastikan proses bernapas dan menelan berjalan dengan baik",
+            "d. Mengatur suhu tubuh"
+        ],
+        "answer": "c. Memastikan proses bernapas dan menelan berjalan dengan baik"
+    },
+    {
+        "question": "17. Ketika udara memasuki dua saluran bronkus dan menuju bronkiolus, apa yang terjadi selanjutnya dalam sistem pernapasan manusia?",
+        "options": [
+            "a. Udara masuk ke dalam perut",
+            "b. Udara mengalir ke dalam paru-paru",
+            "c. Udara dikeluarkan melalui hidung",
+            "d. Udara bertemu dengan makanan di tenggorokan"
+        ],
+        "answer": "b. Udara mengalir ke dalam paru-paru"
+    },
+    {
+        "question": "18. Apa peran bronkus dalam sistem pernapasan manusia?",
+        "options": [
+            "a. Bronkus adalah organ tempat produksi oksigen",
+            "b. Bronkus mengatur suhu tubuh",
+            "c. Bronkus adalah tempat penyimpanan makanan",
+            "d. Bronkus merupakan saluran udara yang membawa udara ke dalam paru-paru"
+        ],
+        "answer": "d. Bronkus merupakan saluran udara yang membawa udara ke dalam paru-paru"
+    },
+    {
+        "question": "19. Apa fungsi dari sensor batuk yang terdapat pada persimpangan bronkus?",
+        "options": [
+            "a. Menghasilkan suara saat batuk",
+            "b. Mengatur suhu udara yang masuk ke paru-paru",
+            "c. Mendorong benda-benda asing ke atas dengan cara batuk",
+            "d. Menghentikan aliran udara ke paru-paru"
+        ],
+        "answer": "c. Mendorong benda-benda asing ke atas dengan cara batuk"
+    },
+    {
+        "question": "20. Mengapa kita sering batuk secara spontan jika tersedak?",
+        "options": [
+            "a. Untuk memproduksi suara",
+            "b. Untuk mengatur suhu tubuh",
+            "c. Untuk menghindari masuknya benda-benda asing ke dalam paru-paru",
+            "d. Untuk mengeluarkan karbon dioksida"
+        ],
+        "answer": "c. Untuk menghindari masuknya benda-benda asing ke dalam paru-paru"
+    },
+    {
+        "question": "21. Apa peran utama paru-paru dalam sistem pernapasan manusia?",
+        "options": [
+            "a. Membuang sisa makanan",
+            "b. Mengatur suhu tubuh",
+            "c. Pertukaran oksigen dan karbon dioksida",
+            "d. Mempertahankan keseimbangan air dalam tubuh"
+        ],
+        "answer": "c. Pertukaran oksigen dan karbon dioksida"
+    },
+    {
+        "question": "22. Di mana letak paru-paru dalam tubuh manusia?",
+        "options": [
+            "a. Di rongga perut",
+            "b. Di rongga kepala",
+            "c. Di rongga dada",
+            "d. Di rongga panggul"
+        ],
+        "answer": "c. Di rongga dada"
+    },
+    {
+        "question": "23. Berapa banyak paru-paru yang dimiliki manusia?",
+        "options": [
+            "a. Satu",
+            "b. Tiga",
+            "c. Empat",
+            "d. Dua"
+        ],
+        "answer": "d. Dua"
+    },
+    {
+        "question": "24. Apa yang terjadi dalam alveolus?",
+        "options": [
+            "a. Pertukaran udara antara oksigen dan karbon dioksida",
+            "b. Produksi suara",
+            "c. Penyaringan kotoran dari udara",
+            "d. Pengaturan suhu tubuh"
+        ],
+        "answer": "a. Pertukaran udara antara oksigen dan karbon dioksida"
+    },
+    {
+        "question": "25. Bagaimana oksigen dan karbon dioksida dipertukarkan di dalam paru-paru?",
+        "options": [
+            "a. Oksigen dikeluarkan melalui napas, dan karbon dioksida masuk ke dalam paru-paru",
+            "b. Oksigen masuk ke dalam paru-paru, dan karbon dioksida dikeluarkan melalui napas",
+            "c. Oksigen dan karbon dioksida disimpan di dalam paru-paru",
+            "d. Oksigen dan karbon dioksida diubah menjadi air di dalam paru-paru"
+        ],
+        "answer": "b. Oksigen masuk ke dalam paru-paru, dan karbon dioksida dikeluarkan melalui napas"
+    }
+]

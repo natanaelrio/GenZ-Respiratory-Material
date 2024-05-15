@@ -14,6 +14,7 @@ export default function HalamanMateri() {
     const setOpen = useBearStore((state) => state.setOpen)
 
     const [dataDetail, setDataDetail] = useState([])
+    // console.log(dataDetail)
     const [gridAreaGambar, setGridAreaGambar] = useState('1/1/1/2')
     const HandleDetail = async (e) => {
         const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/data.json`)
@@ -31,38 +32,26 @@ export default function HalamanMateri() {
 
     return (
         <>
-            {/* <div className={styles.luar}>
-                <div className={styles.atassendiri}>
-                    <div className={styles.gambarlogo}>
-                        <Image src={`${process.env.NEXT_PUBLIC_URL}/logopgsd.png`} width={500} height={100} alt='hidung'></Image>
-                    </div>
-                    <div className={styles.judul}>
-                        <h1>
-                            ORGAN PERNAFASAN MANUSIA
-                        </h1>
-                    </div>
-                    <div></div>
-                </div>
-            </div> */}
             <LayoutHeaderFooter judul={''} kondisi={true} >
-
-                <main className={styles.main} style={{ height: panjang - 100 }}>
+                <main className={styles.main} >
                     <div className={styles.judul}>
                         <h1>
                             ORGAN PERNAFASAN MANUSIA
                         </h1>
                     </div>
                     <div className={styles.grid} style={open ? { gridTemplateColumns: '1fr 1fr' } : {}}>
-                        <div className={styles.gambarluar} style={gridAreaGambar ? { gridArea: gridAreaGambar } : {}}>
+                        <div className={styles.gambarluar} style={{ gridArea: gridAreaGambar }}>
                             <div className={styles.gambar} >
-                                <Image src={`${process.env.NEXT_PUBLIC_URL}/main2.png`} width={1000} height={600} alt='main'></Image>
-                                <div className={styles.hidung} onClick={() => HandleDetail(1)}>HIDUNG</div>
-                                <div className={styles.faring} onClick={() => HandleDetail(2)}>FARING</div>
-                                <div className={styles.laring} onClick={() => HandleDetail(3)}>LARING</div>
-                                <div className={styles.trakea} onClick={() => HandleDetail(4)}>TRAKEA</div>
-                                <div className={styles.bronkus} onClick={() => HandleDetail(5)}>BRONKUS</div>
-                                <div className={styles.paruparu} onClick={() => HandleDetail(6)}>PARU-PARU</div>
-                                <div className={styles.diafragma} onClick={() => HandleDetail(7)}>DIAFRAGMA</div>
+                                <Image src={`${process.env.NEXT_PUBLIC_URL}/main4.png`} width={1000} height={600} alt='main'></Image>
+                                <div className={styles.hidung} onClick={() => HandleDetail(1)}>1. HIDUNG</div>
+                                <div className={styles.laring} onClick={() => HandleDetail(2)}>3. LARING</div>
+                                <div className={styles.paruparu} onClick={() => HandleDetail(3)}>7. PARU-PARU</div>
+                                <div className={styles.faring} onClick={() => HandleDetail(4)}>2. FARING</div>
+                                <div className={styles.trakea} onClick={() => HandleDetail(5)}>4. TRAKEA</div>
+                                <div className={styles.bronkus} onClick={() => HandleDetail(6)}>5. BRONKUS</div>
+                                <div className={styles.bronkiolus} onClick={() => HandleDetail(7)}>6. BRONKIOLUS</div>
+                                <div className={styles.alveolus} onClick={() => HandleDetail(8)}>8. ALVEOLUS</div>
+                                <div className={styles.diafragma} onClick={() => HandleDetail(9)}>9. DIAFRAGMA</div>
                             </div>
                         </div>
                         {open && <LayoutDetail

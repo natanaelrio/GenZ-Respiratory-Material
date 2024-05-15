@@ -1,10 +1,10 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { useBearStore } from '@/zustand/store'
-import Soal from '@/component/soal'
 import Nama from '@/component/nama'
+import SoalABCD from './soalABCD'
 
-export default function MainSoal({ uidparam, color, kondisiAwal, kondisiAkhir, kondisi }) {
+export default function MainSoal({ uidparam, color, kondisiAwal, kondisiAkhir, kondisi, questions }) {
     const openSoal = useBearStore((state) => state.openSoal)
     const [dataSoal, setDataSoal] = useState([])
     const [dataUser, setDataUser] = useState([])
@@ -30,15 +30,7 @@ export default function MainSoal({ uidparam, color, kondisiAwal, kondisiAkhir, k
 
     return (
         <>
-            {openSoal ? <Soal
-                dataUser={dataUser}
-                data={dataSoal}
-                uidparam={uidparam}
-                color={color}
-                kondisiAwal={kondisiAwal}
-                kondisiAkhir={kondisiAkhir}
-                kondisi={kondisi}
-            /> : <Nama
+            {openSoal ? <SoalABCD questions={questions} /> : <Nama
                 color={color}
                 kondisiAwal={kondisiAwal}
                 kondisiAkhir={kondisiAkhir}

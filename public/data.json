@@ -1,58 +1,74 @@
 [
     {
         "id": 1,
-        "gridareadetail": "1/2/1/3",
-        "gridgambar": "1/1/1/2",
+        "gridareadetail": "1/1/1/2",
+        "gridgambar": "1/2/1/3",
         "judul": "HIDUNG",
         "urlgambar": "/hidung.jpg",
-        "detail": "Hidung, yang tersusun dari selaput lendir dan rambut halus. Fungsinya untuk menyaring debu dan kotoran yang masuk ke rongga hidung. Sinus, rongga yang isinya udara dan berada pada sepanjang sisi hidung. Bagian ini berfungsi untuk mengatur suhu dan kelembapan udara yang dihirup."
+        "detail": "Hidung merupakan tempat atau pintu utama udara dihirup. Melalui hidung manusia menghirup oksigen untuk disalurkan ke dalam paru - paru. Sebagai pintu utama, hidung harus menyaring udara yang masuk ke tubuh. Untuk itu terdapat bulu hidung yang tugasnya menyaring debu halus agar tidak masuk ke tubuh."
     },
     {
         "id": 2,
-        "gridareadetail": "1/2/1/3",
-        "gridgambar": "1/1/1/2",
-        "judul": "FARING",
-        "urlgambar": "/faring.jpg",
-        "detail": "Faring, organ pada sistem respirasi yang bertugas untuk menyalurkan udara dari hidung maupun mulut untuk menuju ke trakea. Laring, bagian berupa ruang kecil sebelum trakea yang isinya adalah pita suara."
+        "gridareadetail": "1/1/1/2",
+        "gridgambar": "1/2/1/3",
+        "judul": "LARING",
+        "urlgambar": "/laring.jpg",
+        "detail": "Laring sering juga disebut sebagai kotak suara, dan letaknya berada di persimpangan flaring. Laring memiliki dua pita suara, yang bertugas memproduksi suara. Ketika kita berbicara, maka ada udara yang keluar dari mulut. Udara ini lewat melalui pita suara yang berimpit, akibatnya timbullah getaran."
     },
     {
         "id": 3,
-        "gridareadetail": "1/2/1/3",
-        "gridgambar": "1/1/1/2",
-        "judul": "LARING",
-        "urlgambar": "/laring.jpg",
-        "detail": "Laring adalah saluran pernapasan yang membawa udara menuju ke trakea. Fungsi utama laring adalah untuk melindungi saluran pernapasan dibawahnya dengan cara menutup secara cepat pada stimulasi mekanik, sehingga mencegah masuknya benda asing ke dalam saluran napas."
+        "gridareadetail": "1/1/1/2",
+        "gridgambar": "1/2/1/3",
+        "judul": "PARU-PARU",
+        "urlgambar": "/paruparu.jpeg",
+        "detail": "Paru paru sendiri letaknya berada di dalam tulang rusuk dan jumlahnya sepasang. Paru - paru merupakan tempat menampung udara, sehingga oksigen tersebut bisa disalurkan ke tubuh. Oksigen yang terdapat pada udara tersebut, akan dialirkan ke pembuluh darah. Pekerjaan ini dibantu juga oleh pompaan dari jantung. Dengan demikian tubuh manusia bisa tetap bekerja."
     },
     {
         "id": 4,
         "gridareadetail": "1/2/1/3",
         "gridgambar": "1/1/1/2",
-        "judul": "TRAKEA",
-        "urlgambar": "/trakea.jpg",
-        "detail": "Fungsi trakea dalam sistem pernapasan adalah sebagai jalur masuknya udara ke paru-paru. Trakea merupakan penghubung laring dengan bronkus. Jadi, udara yang masuk, baik melalui mulut atau hidung, akan melewati laring lalu menuju ke trakea dan dilanjutkan ke bronkus."
+        "judul": "FARING",
+        "urlgambar": "/faring.jpg",
+        "detail": "Faring sering juga disebut sebagai tenggorokan bagian atas manusia. Faring ini bentuknya seperti tabung dan letaknya di belakang rongga hidung. Fungsi dari faring ini adalah sebagai penyalur. Jadi udara yang masuk ke tubuh disalurkan lewat faring ke trakea."
     },
     {
         "id": 5,
-        "gridgambar": "1/2/1/3",
-        "gridareadetail": "1/1/1/2",
-        "judul": "BRONKUS",
-        "urlgambar": "/bronkus.jpg",
-        "detail": "Bronkus merupakan organ dalam sistem pernapasan yang menjadi penghubung batang tenggorokan/trakea dengan paru-paru. Fungsi bronkus dalam sistem pernapasan cukup penting, salah satunya adalah memastikan aliran udara masuk dan keluar paru-paru."
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "TRAKEA",
+        "urlgambar": "/trakea.jpg",
+        "detail": "Trakea sendiri sering juga disebut sebagai batang tenggorokan. Trakea tersebut tugasnya adalah mengalirkan udara ke paru - paru. Bentuk trakea sendiri seperti tabung berongga lebar, yang terhubung langsung pada bronkus paru - paru tersebut. Trakea merupakan salah satu organ pernapasan manusia yang sangat penting."
     },
     {
         "id": 6,
-        "gridgambar": "1/2/1/3",
-        "gridareadetail": "1/1/1/2",
-        "judul": "PARU-PARU",
-        "urlgambar": "/paruparu.jpeg",
-        "detail": "Fungsi paru-paru dalam sistem pernapasan berikutnya adalah menjadi tempat pertukaran gas oksigen dan karbon dioksida. Proses ini terjadi pada salah satu bagian paru-paru, yaitu alveolus. Oksigen yang masuk bersama udara akan diangkut oleh aliran darah dan diedarkan ke seluruh tubuh."
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "BRONKUS",
+        "urlgambar": "/bronkus.jpg",
+        "detail": "Bronkus bentuknya menyerupai tabung. Pada bronkus terdapat silia atau rambut kecil dan bergerak secara gelombang. Gerakan tersebut membuat dahak, dan lendir keluar ke tenggorokan. Dahak atau lendir yang terdapat pada tabung bronkial tersebut bertugas mencegah debu masuk ke paru - paru."
     },
     {
         "id": 7,
-        "gridgambar": "1/2/1/3",
-        "gridareadetail": "1/1/1/2",
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "BRONKIOLUS",
+        "urlgambar": "/bronkiolus.jpg",
+        "detail": "Bronkiolus adalah cabung bronkus yang bertugas menyalurkan udara ke alveoli. Selain itu tugas lain dari bronkiolus adalah mengendalikan jumlah udara yang masuk ke paru - paru ketika kita bernafas."
+    },
+    {
+        "id": 8,
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
+        "judul": "ALVEOLUS",
+        "urlgambar": "/alveolus.jpg",
+        "detail": "Pada paru - paru terdapat kantong - kantong kecil yang disebut sebagai Alveolus. Alveolus ini merupakan tempat bertukarnya oksigen dan karbondioksida. Karbon dioksida akan dialirkan ke alveolus sehingga dapat dihembuskan ke luar tubuh."
+    },
+    {
+        "id": 9,
+        "gridareadetail": "1/2/1/3",
+        "gridgambar": "1/1/1/2",
         "judul": "DIAFRAGMA",
         "urlgambar": "/diafragma.jpg",
-        "detail": "Fungsi Diafragma yaitu memudahkan udara atau oksigen bergerak masuk menuju paru-paru, karena tekanan pada rongga dada akan turun secara mendadak. Sementara itu, ketika mengembuskan napas, diafragma akan mengendur dan membuat ukuran paru-paru turut mengecil."
+        "detail": "Diafragma merupakan pemisah rongga dada dan juga perut. Diafragma ini bentuknya berupa otot, dan dapat digunakan untuk memperluas paru - paru. Para penyanyi atau perenang biasanya memanfaatkan diafragma untuk membuat daya tampung paru - paru jadi lebih luas."
     }
 ]

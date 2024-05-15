@@ -22,7 +22,7 @@ export default function LayoutDetail({ judul, gambar, detail, gridareadetail, wi
                 <div className={styles.close} onClick={() => setOpen(false)}>X</div>
             </div>
             <div className={styles.gambardetail}>
-                <Image src={`${process.env.NEXT_PUBLIC_URL}${gambar}`} width={width} height={300} alt='hidung'></Image>
+                <Image src={`${process.env.NEXT_PUBLIC_URL}${gambar}`} width={width} height={200} alt='hidung'></Image>
             </div>
             <div className={styles.deskripsi}>{detail}
             </div>

@@ -1,5 +1,4 @@
-// import HalamanHomeBaru from '@/component/halamanHomeBaru'
-import HalamanMateri from '@/component/halamanMateri'
+import HalamanHomeBaru2 from '@/component/halamanHomeBaru2'
 import LayoutHeaderFooter from '@/component/layoutHeaderFooter'
 
 export const metadata = {
@@ -10,8 +9,7 @@ export const metadata = {
 export default function Home() {
   return (
     <LayoutHeaderFooter kondisi={false} bg={true}>
-      {/* <HalamanHomeBaru /> */}
-      <HalamanMateri />
+      <HalamanHomeBaru2 />
     </LayoutHeaderFooter>
   )
 }
