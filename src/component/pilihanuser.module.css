@@ -39,6 +39,7 @@
     border-right: 7px solid #676cb0;
     border-bottom: 7px solid #676cb0;
     cursor: pointer;
+    color: var(--colorsoal);
 }
 
 .dalam .icon {
