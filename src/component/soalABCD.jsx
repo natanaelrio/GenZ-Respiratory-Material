@@ -4,11 +4,16 @@ import styles from '@/component/soalABCD.module.css'
 import { BiSolidDislike } from "react-icons/bi";
 import BackgroundAtas from './backgroundAtas';
 import dynamic from 'next/dynamic'
+import { useBearStore } from '@/zustand/store'
+import TerimaKasih from './terimakasih';
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 const SoalDND = dynamic(() => import('@/component/soalDND'), { ssr: false })
 
 function SoalABCD({ questions }) {
     // State for current question index, selected option, and score
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const setCurrentQuestion = useBearStore((state) => state.setCurrentQuestion)
+    const currentQuestion = useBearStore((state) => state.currentQuestion)
+
     const [selectedOption, setSelectedOption] = useState('');
     const [score, setScore] = useState(0);
 
@@ -32,16 +37,29 @@ function SoalABCD({ questions }) {
         // setSelectedOption('');
     };
 
+    const handleKembali = () => {
+        setCurrentQuestion(currentQuestion - 1)
+    }
+
     // Check if all questions have been answered
     const quizCompleted = currentQuestion === questions.length;
+
+    if (currentQuestion == 5) {
+        return (
+            <div className={styles.containerdnd}>
+                <SoalDND />
+            </div>
+        )
+    }
+
 
     return (
         <div className={styles.container}>
             <BackgroundAtas />
             {quizCompleted ? (
                 // Show score if quiz is completed
-                // <TerimaKasih />
-                <SoalDND />
+                <TerimaKasih />
+                // <SoalDND />
                 // <div>
                 //     <h2>Quiz Completed!</h2>
                 //     <p>Your score: {score} out of {questions.length}</p>
@@ -68,7 +86,12 @@ function SoalABCD({ questions }) {
                         ))}
                     </ul>
                     {kondisi && <div className={styles.salahhh}>Belum Tepat yaaa...&nbsp; <BiSolidDislike /></div>}
-                    <button onClick={handleNext} disabled={!selectedOption}>Lanjutkan</button>
+                    <div className={styles.bawah}>
+                        {currentQuestion === 0 ? null :
+                            <FaArrowAltCircleLeft className={styles.iconbawah} onClick={handleKembali} />
+                        }
+                        <button onClick={handleNext} disabled={!selectedOption}>Lanjutkan</button>
+                    </div>
                     <div className={styles.icon}>😁</div>
                     <div className={styles.icon2}>😍</div>
                     <div className={styles.icon3}>😊</div>

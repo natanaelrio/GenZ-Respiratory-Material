@@ -7,6 +7,9 @@ export const useBearStore = create((set) => ({
     openSoal: false,
     setOpenSoal: (e) => set(() => ({ openSoal: e })),
 
+    currentQuestion: 0,
+    setCurrentQuestion: (e) => set(() => ({ currentQuestion: e })),
+
     openTerimaKasih: false,
     setOpenTrimaKasih: (e) => set(() => ({ openTerimaKasih: e })),
 }))

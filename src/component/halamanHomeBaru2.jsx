@@ -1,6 +1,6 @@
 import styles from '@/component/halamanHomeBaru2.module.css'
 import Link from 'next/link';
-import { MdOutlineImageSearch } from "react-icons/md";
+
 import { LuPackageSearch } from "react-icons/lu";
 import { SiZincsearch } from "react-icons/si";
 import { TbDog } from "react-icons/tb";
@@ -15,6 +15,13 @@ import { HiFaceSmile } from "react-icons/hi2";
 import { HiGlobeAsiaAustralia } from "react-icons/hi2";
 import { SlPlane } from "react-icons/sl";
 
+import { FaLungs } from "react-icons/fa6";
+import { FaDiagnoses } from "react-icons/fa";
+import { FaVirus } from "react-icons/fa6";
+import { LuBone } from "react-icons/lu";
+import { MdEmojiPeople } from "react-icons/md";
+import { FaLungsVirus } from "react-icons/fa";
+
 import { FaArrowRight } from "react-icons/fa6";
 export default function HalamanHomeBaru2() {
     return (
@@ -23,22 +30,22 @@ export default function HalamanHomeBaru2() {
                 <div className={styles.kiri}>
                     <div className={styles.dalamkiri}>
                         <div className={styles.icon1}>
-                            <GiLighthouse size={100} />
+                            <FaLungs size={100} />
                         </div>
                         <div className={styles.icon2}>
-                            <TbBuildingLighthouse size={100} />
+                            <FaDiagnoses size={100} />
                         </div>
                         <div className={styles.icon3}>
-                            <HiExclamationTriangle size={100} />
+                            <FaVirus size={100} />
                         </div>
                         <div className={styles.icon4}>
-                            <HiGlobeAsiaAustralia size={100} />
+                            <LuBone size={100} />
                         </div>
                         <div className={styles.icon5}>
-                            <SlPlane size={100} />
+                            <MdEmojiPeople size={100} />
                         </div>
                         <div className={styles.icon6}>
-                            <HiFaceSmile size={100} />
+                            <FaLungsVirus size={100} />
                         </div>
                     </div>
                 </div>
@@ -48,7 +55,7 @@ export default function HalamanHomeBaru2() {
                         <div className={styles.judul}>Hai anak-anak, selamat datang</div>
                         <div className={styles.subjudul}> Pada website ini kita dapat belajar organ sistem pernapasan manusia. Silahkan klik Masuk untuk melanjutkan.</div>
                         <div className={styles.masuk}>
-                            <Link href='/pilihan'>
+                            <Link href='/pilihan' target='_blank'>
                                 <button>MASUK &nbsp; <FaArrowRight /></button>
                             </Link>
                         </div>
@@ -57,22 +64,22 @@ export default function HalamanHomeBaru2() {
                 <div className={styles.kanan}>
                     <div className={styles.dalamkanan}>
                         <div className={styles.icon1}>
-                            <GiKidSlide size={100} />
+                            <FaLungs size={100} />
                         </div>
                         <div className={styles.icon2}>
-                            <LuPackageSearch size={100} />
+                            <FaDiagnoses size={100} />
                         </div>
                         <div className={styles.icon3}>
-                            <SiZincsearch size={100} />
+                            <FaVirus size={100} />
                         </div>
                         <div className={styles.icon4}>
-                            <TbDog size={100} />
+                            <LuBone size={100} />
                         </div>
                         <div className={styles.icon5}>
-                            <FaCat size={100} />
+                            <MdEmojiPeople size={100} />
                         </div>
                         <div className={styles.icon6}>
-                            <TbCat size={100} />
+                            <FaLungsVirus size={100} />
                         </div>
                     </div>
 

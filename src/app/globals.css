@@ -20,7 +20,7 @@
   text-decoration: none;
   border: 0;
   font-family: 'Montserrat', sans-serif !important;
-  color: #183153;
+  /* color: #183153; */
 }
 
 body {
@@ -28,6 +28,7 @@ body {
   /* background-blend-mode: hard-light; */
   /* background-image: linear-gradient(180deg, #a78cdc 0, #6c5eba 30%, #1e3599 100%); */
   background-repeat: no-repeat;
+  background-color: var(--colorsoal);
 }
 
 /* 

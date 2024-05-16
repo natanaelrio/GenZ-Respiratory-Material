@@ -1,15 +1,23 @@
 .container {
     display: flex;
-    /* justify-content: center; */
-
     background-color: var(--colorsoal);
-    height: 95dvh;
+    /* height: 100dvh; */
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
-    /* height: 100; */
     z-index: 1;
-    /* color: var(--colorputih); */
+}
+
+.containerdnd {
+    display: flex;
+    background-color: var(--colorsoal);
+    min-height: 100dvh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .isi {
@@ -129,6 +137,30 @@
     z-index: -1;
     color: var(--colordua);
     font-weight: 700;
+}
+
+.bawah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.iconbawah {
+    width: 100px;
+    background-color: var(--colorsoal);
+    color: var(--colorputih);
+    height: 60px;
+    padding: 0 24px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+
+
+.iconbawah:hover {
+    opacity: 0.9;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

@@ -52,12 +52,53 @@
 
 
 .luarbutton {
-    padding: 20px 0;
+    margin-top: 10px;
+    /* padding: 0 0; */
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
+
+.luarbutton button {
+    width: 80%;
+    background-color: var(--colordua);
+    height: 60px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--colorputih);
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.luarbutton button:hover {
+    opacity: 0.9;
+}
+
+.luarbutton .iconbawah:hover {
+    opacity: 0.9;
+}
+
+.luarbutton .iconbawah {
+    width: 20%;
+    background-color: var(--colordua);
+    height: 60px;
+    font-weight: 700;
+    color: var(--colorputih);
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.salahhh {
+    color: var(--colordua);
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
     .dnd h1 {

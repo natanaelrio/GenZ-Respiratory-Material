@@ -12,12 +12,20 @@ import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 
 import { Column } from "@/component/Column";
 import styles from '@/component/soalDND.module.css'
-import TerimaKasih from "@/component/terimakasih";
+import { useBearStore } from '@/zustand/store'
+import { BiSolidDislike } from "react-icons/bi";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 
 export default function SoalDND() {
+    const setCurrentQuestion = useBearStore((state) => state.setCurrentQuestion)
+    const currentQuestion = useBearStore((state) => state.currentQuestion)
+
+    const handleKembali = () => {
+        setCurrentQuestion(currentQuestion - 1)
+    }
 
     const [terimakasih, setTerimaKasih] = useState(null)
-
+    const [kondisi, setKondisi] = useState(false)
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -58,7 +66,7 @@ export default function SoalDND() {
     const array2 = tasks.map((data) => data.id).toString().replace(/,/g, '')
 
     const handleDND = () => {
-        array1 === array2 ? setTerimaKasih(true) : setTerimaKasih(false)
+        array1 === array2 ? setCurrentQuestion(6) : setKondisi(true)
     }
 
     console.log(array1);
@@ -93,24 +101,22 @@ export default function SoalDND() {
 
     return (
         <>
-            {terimakasih ? <TerimaKasih /> :
-                <>
-                    <div className={styles.dnd}>
-                        <h1>Urutkan Gambar Berikut 😁</h1>
-                        {/* <Input onSubmit={addTask} /> */}
-                        <DndContext
-                            sensors={sensors}
-                            collisionDetection={closestCorners}
-                            onDragEnd={handleDragEnd}
-                        >
-                            <Column id="toDo" tasks={tasks} />
-                        </DndContext>
-                    </div>
-                    <div className={styles.luarbutton}>
-                        <button onClick={handleDND}>Kirim</button>
-                    </div>
-                </>
-            }
+            <div className={styles.dnd}>
+                <h1>6. Urutkan Gambar Berikut 😁</h1>
+                {/* <Input onSubmit={addTask} /> */}
+                <DndContext
+                    sensors={sensors}
+                    collisionDetection={closestCorners}
+                    onDragEnd={handleDragEnd}
+                >
+                    <Column id="toDo" tasks={tasks} />
+                </DndContext>
+            </div>
+            {kondisi && <div className={styles.salahhh}>Belum Tepat yaaa...&nbsp; <BiSolidDislike /></div>}
+            <div className={styles.luarbutton}>
+                <FaArrowAltCircleLeft className={styles.iconbawah} onClick={handleKembali} />
+                <button onClick={handleDND}>Lanjutkan</button>
+            </div>
         </>
     );
 }
