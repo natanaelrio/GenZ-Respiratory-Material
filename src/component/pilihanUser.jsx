@@ -18,20 +18,20 @@ export default function PilihanUser() {
                 </div>
             </div>
             <div className={styles.isi}>
-                <div className={styles.kolom1}>
-                    <div className={styles.dalam} onClick={() => { router.push('/materi'), setOpenSoal(false) }}>
+                <a href='/materi' className={styles.kolom1}>
+                    <div className={styles.dalam} onClick={() => { setOpenSoal(false) }}>
                         <div className={styles.judul}>Lorem, ipsum.</div>
                         <div className={styles.subjudul}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis!</div>
                         <div className={styles.icon}>👌</div>
                     </div>
-                </div>
-                <div className={styles.kolom2}>
-                    <div className={styles.dalam2} onClick={() => { router.push('/soal/1'), setOpenSoal(false) }}>
+                </a>
+                <a href='/soal/1' className={styles.kolom2}>
+                    <div className={styles.dalam2} onClick={() => { setOpenSoal(false) }}>
                         <div className={styles.judul}>Lorem, ipsum.</div>
                         <div className={styles.subjudul}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis!</div>
                         <div className={styles.icon}>😍</div>
                     </div>
-                </div>
+                </a>
                 {/* <div className={styles.kolom3}>
                     <div className={styles.dalam} onClick={() => { router.push('/soalpertama/1'), setOpenSoal(false) }}>
                         <div className={styles.judul}>Lorem, ipsum.</div>

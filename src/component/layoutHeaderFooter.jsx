@@ -14,7 +14,7 @@ export default function LayoutHeaderFooter({ children, kondisi, bg }) {
                 </div>
                 <div className={styles.kanan}>
                     {kondisi && <button onClick={() => router.back()}>
-                        <FaArrowLeft size={17} />
+                        <FaArrowLeft size={17} color="black" />
                     </button>}
                 </div>
             </header>

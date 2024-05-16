@@ -1,20 +1,6 @@
 import styles from '@/component/halamanHomeBaru2.module.css'
 import Link from 'next/link';
 
-import { LuPackageSearch } from "react-icons/lu";
-import { SiZincsearch } from "react-icons/si";
-import { TbDog } from "react-icons/tb";
-import { FaCat } from "react-icons/fa"
-import { TbCat } from "react-icons/tb";
-import { GiKidSlide } from "react-icons/gi";
-
-import { GiLighthouse } from "react-icons/gi";
-import { TbBuildingLighthouse } from "react-icons/tb";
-import { HiExclamationTriangle } from "react-icons/hi2";
-import { HiFaceSmile } from "react-icons/hi2";
-import { HiGlobeAsiaAustralia } from "react-icons/hi2";
-import { SlPlane } from "react-icons/sl";
-
 import { FaLungs } from "react-icons/fa6";
 import { FaDiagnoses } from "react-icons/fa";
 import { FaVirus } from "react-icons/fa6";
@@ -55,9 +41,9 @@ export default function HalamanHomeBaru2() {
                         <div className={styles.judul}>Hai anak-anak, selamat datang</div>
                         <div className={styles.subjudul}> Pada website ini kita dapat belajar organ sistem pernapasan manusia. Silahkan klik Masuk untuk melanjutkan.</div>
                         <div className={styles.masuk}>
-                            <Link href='/pilihan' target='_blank'>
+                            <a href='/pilihan'>
                                 <button>MASUK &nbsp; <FaArrowRight /></button>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>
