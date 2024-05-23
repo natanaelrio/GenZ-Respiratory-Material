@@ -9,7 +9,7 @@
 }
 
 .luarbutton button {
-    width: 80%;
+    width: 30%;
     background-color: var(--colordua);
     height: 60px;
     font-weight: 700;
@@ -28,7 +28,7 @@
 }
 
 .luarbutton .iconbawah {
-    width: 20%;
+    width: 10%;
     background-color: var(--colordua);
     height: 60px;
     font-weight: 700;
@@ -62,7 +62,7 @@
     padding: 20px 10px;
     border: 1px solid black;
     border-radius: 5px;
-    min-width: 210px;
+    width: 210px;
     height: 420px;
 }
 
@@ -75,17 +75,42 @@
     color: var(--colorputih);
     font-size: 24px;
     padding: 20px 0;
+    font-weight: 700;
 }
 
 .containerStyle {
     display: flex;
     gap: 10px;
     touch-action: none;
+    /* padding: 10px; */
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
     .droppableStyle .isi {
-        min-width: 130px;
+        /* min-width: 130px; */
+        width: 46vw;
     }
+
+    .droppableStyle {
+        padding: 10px 0;
+    }
+
+    .droppableStyle .isi {
+        border: 1px solid black;
+    }
+
+
+    .luarbutton button {
+        width: 80%;
+    }
+
+    .luarbutton .iconbawah {
+        width: 20%;
+    }
+
+    .judulatas {
+        font-size: 20px;
+    }
+
 }
