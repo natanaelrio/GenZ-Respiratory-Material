@@ -154,7 +154,7 @@ function DNDnew() {
                 onDragEnd={handleDragEnd}
                 onDragOver={handleDragOver}
             >
-                <div style={containerStyle}>
+                <div className={styles.containerStyle}>
                     {Object.keys(items).map((group) => (
                         <Droppable id={group} items={items[group]} key={group} />
                     ))}

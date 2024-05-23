@@ -18,6 +18,7 @@ const SortableItem = (props) => {
     transform: CSS.Transform.toString(transform),
     transition,
     width: '100%',
+    background: 'white',
     // height: 30,
     padding: 8,
     display: "flex",
