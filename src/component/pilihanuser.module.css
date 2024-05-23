@@ -103,10 +103,25 @@
     color: var(--colorsoal);
 }
 
+
 .iconatas {
     padding: 20px;
+    animation: mymove 3s infinite linear normal;
+    position: relative;
     opacity: 0.5;
 }
+
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 10px;
+    }
+}
+
 
 @media (min-width: 320px) and (max-width: 480px) {
     .isi {

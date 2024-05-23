@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { useBearStore } from '@/zustand/store'
 import { useRouter } from 'next/navigation';
 import LayoutHeaderFooter from './layoutHeaderFooter';
+import { FaArrowDown } from "react-icons/fa";
 
 export default function HalamanMateri() {
     const router = useRouter()
@@ -36,7 +37,7 @@ export default function HalamanMateri() {
                 <main className={styles.main} >
                     <div className={styles.judul}>
                         <h1>
-                            ORGAN PERNAFASAN MANUSIA
+                            ORGAN PERNAPASAN MANUSIA
                         </h1>
                     </div>
                     <div className={styles.grid} style={open ? { gridTemplateColumns: '1fr 1fr' } : {}}>
@@ -62,11 +63,26 @@ export default function HalamanMateri() {
                             width={1000}
                         />}
                     </div>
-                    <div className={styles.soal}>
+                    {/* <div className={styles.soal}>
                         <button onClick={() => router.push(`/soal/1`)}>Soal</button>
-                    </div>
-
+                    </div> */}
                 </main>
+                <div className={styles.alurpernapasan}>
+                    <div className={styles.tandapanah}>
+                        <div className={styles.iconatas}>
+                            <FaArrowDown size={30} />
+                        </div>
+                        <div className={styles.judul}>
+                            Geser kebawah, untuk belajar alur pernapasan manusia
+                        </div>
+                        <div className={styles.iconatas}>
+                            <FaArrowDown size={30} />
+                        </div>
+                    </div>
+                    <div className={styles.gambaralurpernafasan}>
+                        <Image src={`${process.env.NEXT_PUBLIC_URL}/alurpenafasan.png`} width={1000} height={600} alt='main'></Image>
+                    </div>
+                </div>
             </LayoutHeaderFooter>
         </>
 

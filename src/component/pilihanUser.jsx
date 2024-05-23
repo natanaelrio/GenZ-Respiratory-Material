@@ -1,11 +1,9 @@
 'use client'
 import styles from '@/component/pilihanuser.module.css'
-import { useRouter } from 'next/navigation'
 import { useBearStore } from '@/zustand/store'
 import { FaArrowDown } from "react-icons/fa";
 
 export default function PilihanUser() {
-    const router = useRouter()
     const setOpenSoal = useBearStore((state) => state.setOpenSoal)
 
     return (
@@ -20,20 +18,20 @@ export default function PilihanUser() {
             <div className={styles.isi}>
                 <a href='/materi' className={styles.kolom1}>
                     <div className={styles.dalam} onClick={() => { setOpenSoal(false) }}>
-                        <div className={styles.judul}>Lorem, ipsum.</div>
+                        <div className={styles.judul}>Sumber Belajar</div>
                         <div className={styles.subjudul}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis!</div>
                         <div className={styles.icon}>👌</div>
                     </div>
                 </a>
                 <a href='/soal/1' className={styles.kolom2}>
                     <div className={styles.dalam2} onClick={() => { setOpenSoal(false) }}>
-                        <div className={styles.judul}>Lorem, ipsum.</div>
+                        <div className={styles.judul}>Soal Latihan</div>
                         <div className={styles.subjudul}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis!</div>
                         <div className={styles.icon}>😍</div>
                     </div>
                 </a>
                 {/* <div className={styles.kolom3}>
-                    <div className={styles.dalam} onClick={() => { router.push('/soalpertama/1'), setOpenSoal(false) }}>
+                    <div className={styles.dalam3} onClick={() => { router.push('/soalpertama/1'), setOpenSoal(false) }}>
                         <div className={styles.judul}>Lorem, ipsum.</div>
                         <div className={styles.subjudul}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis!</div>
                         <div className={styles.icon}>😁</div>

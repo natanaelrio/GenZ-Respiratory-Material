@@ -7,7 +7,8 @@ import dynamic from 'next/dynamic'
 import { useBearStore } from '@/zustand/store'
 import TerimaKasih from './terimakasih';
 import { FaArrowAltCircleLeft } from "react-icons/fa";
-const SoalDND = dynamic(() => import('@/component/soalDND'), { ssr: false })
+// import DNDnew from './dndNew';
+const DNDnew = dynamic(() => import('@/component/dndNew'), { ssr: false })
 
 function SoalABCD({ questions }) {
     // State for current question index, selected option, and score
@@ -47,7 +48,8 @@ function SoalABCD({ questions }) {
     if (currentQuestion == 5) {
         return (
             <div className={styles.containerdnd}>
-                <SoalDND />
+                {/* <SoalDND /> */}
+                <DNDnew />
             </div>
         )
     }
