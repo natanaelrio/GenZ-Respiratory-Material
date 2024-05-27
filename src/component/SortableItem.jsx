@@ -20,7 +20,7 @@ const SortableItem = (props) => {
     width: '100%',
     background: 'white',
     // height: 30,
-    padding: 8,
+    padding: 4.5,
     display: "flex",
     alignItems: "center",
     paddingLeft: 5,
@@ -54,7 +54,7 @@ const SortableItem = (props) => {
   return (
     <div style={itemStyle} ref={setNodeRef} {...attributes} {...listeners}>
       <div>
-        <Image src={`${process.env.NEXT_PUBLIC_URL}/${urlgambar}`} width={40} height={40} alt='hidung'></Image>
+        <Image src={`${process.env.NEXT_PUBLIC_URL}/${urlgambar}`} width={35} height={35} alt='hidung'></Image>
       </div>
       {idnya}.{judul}        <MdOutlineDragIndicator />
     </div>

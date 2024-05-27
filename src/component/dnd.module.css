@@ -63,7 +63,7 @@
     border: 1px solid black;
     border-radius: 5px;
     width: 210px;
-    height: 630px;
+    height: 520px;
 }
 
 .droppableStyle .judul {
@@ -80,7 +80,7 @@
 
 .subjudul {
     color: var(--colorputih);
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 20px;
     font-weight: 500;
     text-align: center;
@@ -103,7 +103,7 @@
 
     .droppableStyle {
         padding: 10px 0;
-        overflow: scroll;
+        /* overflow: scroll; */
     }
 
     .droppableStyle .isi {
@@ -121,11 +121,12 @@
 
     .judulatas {
         font-size: 20px;
+        padding: 0 20px;
     }
 
     .subjudul {
         color: var(--colorputih);
-        font-size: 10px;
+        font-size: 8px;
         /* padding-bottom: 20px; */
         padding: 0 20px 20px 20px;
         font-weight: 500;
