@@ -34,7 +34,7 @@ function DNDnew() {
         return array;
     }
 
-    const randomObjects = ["1", "2", "3", "4", "5", "6",]
+    const randomObjects = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
     const acakObject = shuffleArray(randomObjects)
 
     const [items, setItems] = useState({
@@ -42,7 +42,7 @@ function DNDnew() {
         group2: []
     });
 
-    const tasksReal = ["1", "2", "3", "4", "5", "6",]
+    const tasksReal = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     const array1 = tasksReal.toString().replace(/,/g, '')
     const array2 = items.group2.toString().replace(/,/g, '')
@@ -149,6 +149,9 @@ function DNDnew() {
     return (
         <>
             <div className={styles.judulatas}>6. Urutkan Gambar Berikut 😁</div>
+            <div className={styles.subjudul}>
+                Urutkan gambar-gambar organ pernapasan dibawah ini, pindahkan gambar dari kolom kiri ke kolom yang kanan secara berurutan
+            </div>
             <DndContext
                 sensors={sensors}
                 onDragEnd={handleDragEnd}

@@ -39,7 +39,7 @@ export default function HalamanHomeBaru2() {
                 <div className={styles.isi}>
                     <div className={styles.tengah}>
                         <div className={styles.judul}>Website Pembelajaran, Organ Sistem Pernapasan Manusia</div>
-                        <div className={styles.subjudul}> Pada website ini kita dapat belajar organ sistem pernapasan manusia. Silahkan klik Masuk untuk melanjutkan.</div>
+                        <div className={styles.subjudul}>Hai anak-anak, Pada website ini kita dapat belajar organ sistem pernapasan manusia. Silahkan klik Masuk untuk melanjutkan.</div>
                         <div className={styles.masuk}>
                             <a href='/pilihan'>
                                 <button>MASUK &nbsp; <FaArrowRight /></button>

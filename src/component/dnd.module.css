@@ -63,7 +63,7 @@
     border: 1px solid black;
     border-radius: 5px;
     width: 210px;
-    height: 420px;
+    height: 630px;
 }
 
 .droppableStyle .judul {
@@ -74,8 +74,17 @@
 .judulatas {
     color: var(--colorputih);
     font-size: 24px;
-    padding: 20px 0;
+    padding: 20px 20px 0 20px;
     font-weight: 700;
+}
+
+.subjudul {
+    color: var(--colorputih);
+    font-size: 14px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+    width: 510px;
 }
 
 .containerStyle {
@@ -111,6 +120,16 @@
 
     .judulatas {
         font-size: 20px;
+    }
+
+    .subjudul {
+        color: var(--colorputih);
+        font-size: 10px;
+        /* padding-bottom: 20px; */
+        padding: 0 20px 20px 20px;
+        font-weight: 500;
+        text-align: center;
+        width: auto;
     }
 
 }
