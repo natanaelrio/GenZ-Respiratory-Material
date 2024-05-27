@@ -103,6 +103,7 @@
 
     .droppableStyle {
         padding: 10px 0;
+        overflow: scroll;
     }
 
     .droppableStyle .isi {
