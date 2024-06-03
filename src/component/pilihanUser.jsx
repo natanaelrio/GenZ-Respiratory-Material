@@ -10,7 +10,7 @@ export default function PilihanUser() {
     return (
         <div className={styles.container} id='pilihanuser'>
             <div className={styles.atas}>
-                <div className={styles.judulatas}>Tantangan Buat Anda!! 😁</div>
+                <div className={styles.judulatas}>Hai, Mari Mulai Belajar 😁</div>
                 {/* <div className={styles.subjudulatas}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, at!</div>
                 <div className={styles.iconatas}>
                     <FaArrowDown size={50} />
