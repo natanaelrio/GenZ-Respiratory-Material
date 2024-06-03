@@ -144,8 +144,6 @@ function DNDnew() {
         };
     };
 
-    const containerStyle = { display: "flex", gap: '20px' };
-
     return (
         <>
             <div className={styles.judulatas}>6. Urutkan Gambar Berikut 😁</div>

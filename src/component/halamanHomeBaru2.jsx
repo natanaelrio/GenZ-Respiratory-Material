@@ -1,12 +1,11 @@
 import styles from '@/component/halamanHomeBaru2.module.css'
-import Link from 'next/link';
 
 import { FaLungs } from "react-icons/fa6";
 import { FaDiagnoses } from "react-icons/fa";
 import { FaVirus } from "react-icons/fa6";
 import { LuBone } from "react-icons/lu";
 import { MdEmojiPeople } from "react-icons/md";
-import { FaLungsVirus } from "react-icons/fa";
+// import { FaLungsVirus } from "react-icons/fa";
 
 import { FaArrowRight } from "react-icons/fa6";
 export default function HalamanHomeBaru2() {
@@ -30,21 +29,21 @@ export default function HalamanHomeBaru2() {
                         <div className={styles.icon5}>
                             <MdEmojiPeople size={100} />
                         </div>
-                        <div className={styles.icon6}>
+                        {/* <div className={styles.icon6}>
                             <FaLungsVirus size={100} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
                 <div className={styles.isi}>
                     <div className={styles.tengah}>
-                        <div className={styles.judul}>Website Pembelajaran, Organ Sistem Pernapasan Manusia</div>
+                        <div className={styles.judul}>Organ Pernapasan Manusia</div>
                         <div className={styles.subjudul}>Hai anak-anak, Pada website ini kita dapat belajar organ sistem pernapasan manusia. Silahkan klik Masuk untuk melanjutkan.</div>
-                        <div className={styles.masuk}>
+                        {/* <div className={styles.masuk}>
                             <a href='/pilihan'>
                                 <button>MASUK &nbsp; <FaArrowRight /></button>
                             </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className={styles.kanan}>
@@ -64,9 +63,9 @@ export default function HalamanHomeBaru2() {
                         <div className={styles.icon5}>
                             <MdEmojiPeople size={100} />
                         </div>
-                        <div className={styles.icon6}>
+                        {/* <div className={styles.icon6}>
                             <FaLungsVirus size={100} />
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

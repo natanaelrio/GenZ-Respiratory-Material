@@ -3,6 +3,7 @@ import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import Image from "next/image";
 import { MdOutlineDragIndicator } from "react-icons/md";
+import styles from '@/component/dnd.module.css'
 
 const SortableItem = (props) => {
 
@@ -30,8 +31,9 @@ const SortableItem = (props) => {
     userSelect: "none",
     cursor: "grab",
     boxSizing: "border-box",
-    gap: 5,
-    justifyContent: 'space-between'
+    gap: 15,
+    justifyContent: 'space-between',
+    fontSize: 12
   };
 
 
@@ -54,9 +56,14 @@ const SortableItem = (props) => {
   return (
     <div style={itemStyle} ref={setNodeRef} {...attributes} {...listeners}>
       <div>
-        <Image src={`${process.env.NEXT_PUBLIC_URL}/${urlgambar}`} width={35} height={35} alt='hidung'></Image>
+        <Image src={`${process.env.NEXT_PUBLIC_URL}/${urlgambar}`} width={30} height={30} alt='hidung'></Image>
       </div>
-      {idnya}.{judul}        <MdOutlineDragIndicator />
+      <div className={styles.juduldalam}>
+        {judul}
+      </div>
+      <div className={styles.icon}>
+        <MdOutlineDragIndicator />
+      </div>
     </div>
   );
 };

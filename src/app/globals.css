@@ -2,12 +2,14 @@
 
 :root {
   --colormain: #fff3e5;
-  --colordua: #ff6142;
+  --colordua: #16214f;
   --colorputih: #fff;
   --coloryellow: yellow;
   --colorsoal: #16214f;
+  --colorsekunder: #0096c7;
   --colorgrey: #696f72;
-  --colormainsoal: #6D5FB4
+  --colormainsoal: #6D5FB4;
+  --colorhover: #ff6142;
 }
 
 * {

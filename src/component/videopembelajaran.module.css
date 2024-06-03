@@ -1,0 +1,56 @@
+.video {
+    background-color: #bde0fe;
+    padding: 100px;
+}
+
+.video .judul {
+    font-weight: 1000;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.content .list {
+    width: 30%;
+    height: 300px;
+    background-color: grey;
+}
+
+.videobg {
+    position: relative;
+    height: 100%;
+    background: #000;
+    padding-bottom: 56%;
+}
+
+.videobg iframe {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .video .judul {
+        font-size: 30px;
+    }
+
+    .video {
+        padding: 20px;
+    }
+
+    .content .list {
+        width: 95%;
+    }
+}

@@ -1,5 +1,5 @@
 .atas {
-    height: 100px;
+    height: 50px;
     width: 100%;
     background-color: var(--colorsoal);
     margin-bottom: 20px;
@@ -7,7 +7,7 @@
 }
 
 .atas img {
-    height: 100px;
+    height: 50px;
     width: 100%;
     object-fit: cover;
     object-position: bottom;
@@ -15,7 +15,7 @@
 
 .atas .bg {
     position: absolute;
-    height: 100px;
+    height: 50px;
     width: 100%;
     opacity: 0.5;
     z-index: 23;

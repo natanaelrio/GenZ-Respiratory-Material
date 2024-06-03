@@ -1,6 +1,7 @@
-import HalamanHomeBaru2 from '@/component/halamanHomeBaru2'
+import HalamanHomeBaru3 from '@/component/halamanHomeBaru3'
 import LayoutHeaderFooter from '@/component/layoutHeaderFooter'
-// import DNDnew from '@/component/dndNew'
+import PilihanUser from '@/component/pilihanUser'
+import VideoPembelajaran from '@/component/videoPembelajaran'
 
 export const metadata = {
   title: 'ORGAN PERNAFASAN MANUSIA',
@@ -10,8 +11,9 @@ export const metadata = {
 export default function Home() {
   return (
     <LayoutHeaderFooter kondisi={false} bg={true}>
-      {/* <DNDnew /> */}
-      <HalamanHomeBaru2 />
+      <HalamanHomeBaru3 />
+      <PilihanUser />
+      <VideoPembelajaran />
     </LayoutHeaderFooter>
   )
 }

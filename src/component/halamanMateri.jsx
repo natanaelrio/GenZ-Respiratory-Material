@@ -40,6 +40,10 @@ export default function HalamanMateri() {
                             ORGAN PERNAPASAN MANUSIA
                         </h1>
                     </div>
+                    <div className={styles.subjudul}>
+                        &quot;Hai anak - anak, pada halaman ini kalian akan belajar tentang organ dan alur pernapasan manusia. Apa sih bernapas itu? Bernapas adalah proses mulai dari pengambilan oksigen sampai pengeluaran karbondioksida. <br />Manusia dalam bernapas menghirup oksigen dan membuang karbondioksida.
+                        Nah.. sekarang ada pertanyaan lagi, Apa saja organ - organ pernapasan pada manusia? Ya, ada Hidung, Faring, Laring, Trakea, Bronkus, Bronkiolus, Paru - paru, Alveolus, dan Diafragma. Nah anak - anak itu tadi organ - organ pernapasan manusia yuk - yuk kita mulai belajar.&quot;
+                    </div>
                     <div className={styles.grid} style={open ? { gridTemplateColumns: '1fr 1fr' } : {}}>
                         <div className={styles.gambarluar} style={{ gridArea: gridAreaGambar }}>
                             <div className={styles.gambar} >

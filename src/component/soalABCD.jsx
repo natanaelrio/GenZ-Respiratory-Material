@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '@/component/soalABCD.module.css'
 import { BiSolidDislike } from "react-icons/bi";
 import BackgroundAtas from './backgroundAtas';
@@ -15,7 +15,7 @@ function SoalABCD({ questions }) {
     const setCurrentQuestion = useBearStore((state) => state.setCurrentQuestion)
     const currentQuestion = useBearStore((state) => state.currentQuestion)
 
-    const [selectedOption, setSelectedOption] = useState('');
+    const [selectedOption, setSelectedOption] = useState('abcd');
     const [score, setScore] = useState(0);
 
     // Function to handle answer selection
@@ -26,11 +26,15 @@ function SoalABCD({ questions }) {
     const [kondisi, setKondisi] = useState(null)
     // Function to handle "Next" button click
 
-    const handleNext = () => {
+    const handleNext = (e) => {
         // Check if the selected option is correct
-        if (selectedOption === questions[currentQuestion].answer) {
+
+        if (e === questions[currentQuestion].answer) {
             // If correct, update the score
             return setKondisi(null) || setCurrentQuestion(currentQuestion + 1) || setSelectedOption('') || setScore(score + 1);
+        }
+        if (e == 'abcd') {
+            return setKondisi(true)
         }
         else return setKondisi(true)
         // Move to the next question and reset selected option
@@ -39,7 +43,7 @@ function SoalABCD({ questions }) {
     };
 
     const handleKembali = () => {
-        setCurrentQuestion(currentQuestion - 1)
+        setCurrentQuestion(currentQuestion - 1) || setKondisi(false)
     }
 
     // Check if all questions have been answered
@@ -92,7 +96,7 @@ function SoalABCD({ questions }) {
                         {currentQuestion === 0 ? null :
                             <FaArrowAltCircleLeft className={styles.iconbawah} onClick={handleKembali} />
                         }
-                        <button onClick={handleNext} disabled={!selectedOption}>Lanjutkan</button>
+                        <button onClick={() => handleNext(selectedOption)} disabled={!selectedOption}>Lanjutkan</button>
                     </div>
                     <div className={styles.icon}>😁</div>
                     <div className={styles.icon2}>😍</div>

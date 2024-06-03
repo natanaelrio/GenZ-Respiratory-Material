@@ -16,6 +16,15 @@ const Droppable = ({ id, items }) => {
                         <SortableItem key={item} id={item} />
                     ))}
                 </div>
+                {<div className={styles.kotakshadow}>
+                    {[...Array(9).keys()].map((i) => {
+                        return (
+                            <div className={styles.shadowkotak} key={i}>
+                                {id == 'group2' && `kotak ke ${i + 1}`}
+                            </div>
+                        )
+                    })}
+                </div>}
 
             </div>
         </SortableContext>

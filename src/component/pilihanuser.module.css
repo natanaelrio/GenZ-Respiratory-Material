@@ -45,10 +45,11 @@
 .dalam .icon {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 20px;
     font-size: 90px;
     z-index: 1;
     opacity: 0.2;
+    display: flex;
 }
 
 .dalam:hover .icon {
@@ -63,22 +64,23 @@
     height: 250px;
     width: 100%;
     padding: 20px;
-    border: 2px solid #69a37a;
+    border: 2px solid #ff7d8d;
     border-radius: 12px;
     position: relative;
-    background-color: #9dddab;
-    border-right: 7px solid #69a37a;
-    border-bottom: 7px solid #69a37a;
+    background-color: #fec7bc;
+    border-right: 7px solid #ff7d8d;
+    border-bottom: 7px solid #ff7d8d;
     cursor: pointer;
 }
 
 .dalam2 .icon {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 20px;
     font-size: 90px;
     z-index: 1;
     opacity: 0.2;
+    display: flex;
 }
 
 .dalam2:hover .icon {

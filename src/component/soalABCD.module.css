@@ -26,6 +26,7 @@
     background-color: var(--colorputih);
     padding: 20px;
     border-radius: 7px;
+    margin-bottom: 70px;
 }
 
 .container h2 {
@@ -51,6 +52,7 @@
     transition: all ease 0.2s;
     border: 2px solid var(--colordua);
     background-color: var(--colordua);
+    color: var(--colorputih);
 }
 
 
@@ -78,7 +80,7 @@
 }
 
 .container .salahhh {
-    color: var(--colordua);
+    color: var(--colorhover);
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -157,14 +159,32 @@
     border-radius: 7px;
 }
 
-
-
 .iconbawah:hover {
     opacity: 0.9;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .isi {
-        width: 95vw;
+        width: 90vw;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon2 {
+        display: none;
+    }
+
+    .icon3 {
+        display: none;
+    }
+
+    .icon4 {
+        display: none;
+    }
+
+    .icon5 {
+        display: none;
     }
 }

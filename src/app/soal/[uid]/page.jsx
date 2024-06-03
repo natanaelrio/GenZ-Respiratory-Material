@@ -1,5 +1,6 @@
 import MainSoal from "@/component/mainSoal";
 export const dynamic = "force-dynamic";
+import LayoutHeaderFooter from '@/component/layoutHeaderFooter';
 
 export const metadata = {
     title: 'SOAL ORGAN PERNAFASAN MANUSIA',
@@ -18,10 +19,12 @@ async function getSoalABCD() {
 export default async function Soalnya({ params }) {
     const questions = await getSoalABCD();
     return (
-        <MainSoal
-            uidparam={params.uid}
-            kondisiAkhir={true}
-            kondisi={false}
-            questions={questions} />
+        <LayoutHeaderFooter kondisi={true}>
+            <MainSoal
+                uidparam={params.uid}
+                kondisiAkhir={true}
+                kondisi={false}
+                questions={questions} />
+        </LayoutHeaderFooter>
     )
 }
