@@ -96,7 +96,7 @@ export default function Footer({ kondisi }) {
                 </div>
             </div>
             <div className={styles.copyright}>
-                Copyright 2024 © Situs Belajar Online Masa Kini | wwwkwkwk
+                Copyright 2024 © Situs Belajar Online Masa Kini
             </div>
         </footer>
     )

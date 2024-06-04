@@ -1,4 +1,6 @@
 import HalamanMateri from '@/component/halamanMateri'
+import VideoPembelajaran from '@/component/videoPembelajaran'
+import LayoutHeaderFooter from '@/component/layoutHeaderFooter';
 
 export const metadata = {
   title: 'Materi ORGAN PERNAFASAN MANUSIA',
@@ -7,6 +9,9 @@ export const metadata = {
 
 export default function Materi() {
   return (
-    <HalamanMateri />
+    <LayoutHeaderFooter judul={''} kondisi={false} >
+      <HalamanMateri />
+      <VideoPembelajaran />
+    </LayoutHeaderFooter>
   )
 }

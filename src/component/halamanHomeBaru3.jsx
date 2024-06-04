@@ -1,22 +1,17 @@
 import styles from '@/component/halamanHomeBaru3.module.css'
 import Image from 'next/image'
 import { FaArrowTurnDown } from "react-icons/fa6";
+import LayoutHalamanAtas from './layoutHalamanAtas';
 
 export default function HalamanHomeBaru3() {
   return (
     <>
-      <div className={styles.home}>
-        <div className={styles.kiri}>
-          <div className={styles.judul}>ORGAN PENAPASAN MANUSIA</div>
-          <div className={styles.subjudul}>Hai anak-anak, Pada website ini kita dapat belajar organ sistem pernapasan manusia. Silahkan klik Masuk untuk melanjutkan.</div>
+      <LayoutHalamanAtas gambar={'logoutamabaru.png'}>
+        <div className={styles.judul}>SISTEM PENAPASAN MANUSIA</div>
+        <div className={styles.subjudul}>
+          Hai anak-anak, Pada website ini kita akan belajar tentang organ sistem pernapasan dan alur pernapasan pada manusia.
         </div>
-        <div className={styles.kanan}>
-          <Image src={`${process.env.NEXT_PUBLIC_URL}/logoutamabaru.png`} width={1000} height={100} alt='main'></Image>
-        </div>
-      </div>
-      <a href='#pilihanuser' className={styles.geserkebawah} >
-        Geser Kebawah <FaArrowTurnDown />
-      </a>
+      </LayoutHalamanAtas>
     </>
   )
 }

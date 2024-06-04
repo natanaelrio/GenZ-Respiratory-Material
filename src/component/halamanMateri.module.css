@@ -47,6 +47,13 @@
     width: 200px
 }
 
+
+.judul2 {
+    font-size: 30px;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
 .judul {
     display: flex;
     justify-content: center;
@@ -56,18 +63,23 @@
     margin-top: 10px;
     font-size: 40px;
     font-weight: 700;
-    color: var(--coloryellow);
-    text-shadow:
+    color: var(--colorsoal);
+    font-weight: 1000;
+    /* text-shadow:
         3px 3px 2px #000,
         -3px 3px 2px #000,
         -3px -3px 0 #000,
-        3px -3px 0 #000;
+        3px -3px 0 #000; */
 }
 
 .subjudul {
     width: 70vw;
     text-align: center;
     font-size: 14px;
+    background-color: var(--colorsoal);
+    color: var(--colorputih);
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .grid {
@@ -130,7 +142,19 @@
     width: 700px;
     display: flex;
     justify-content: center;
+    /* grid-area: 1/1/1/2; */
 }
+
+/* 
+.texttambahan {
+    background-color: var(--colorsoal);
+    color: var(--colorputih);
+    font-size: 14px;
+    margin-left: 30px;
+    padding: 30px;
+    font-weight: 500;
+    grid-area: 1/2/2/3;
+} */
 
 
 .gambarluar img {
@@ -326,8 +350,8 @@
 
 .gambar .diafragma {
     position: absolute;
-    top: 377px;
-    left: -87px;
+    top: 359px;
+    right: -112px;
     height: 30px;
     padding: 0 24px;
     background-color: var(--colordua);
@@ -416,6 +440,18 @@
         top: 10px;
     }
 }
+
+.gambaralurpernafasan {
+    width: 100%;
+}
+
+.gambaralurpernafasan img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
 
 
 @media (min-width: 320px) and (max-width: 480px) {
