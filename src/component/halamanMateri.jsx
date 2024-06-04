@@ -33,14 +33,17 @@ export default function HalamanMateri() {
 
     return (
         <>
-            <LayoutHalamanAtas gambar={'gambarmateri.gif'} bg={'#031620'}>
+            <LayoutHalamanAtas
+                gambar={'gambarmateri.gif'}
+                bg={'#031620'}
+                katabawah={'Lets goo!!'}>
                 <div className={styles.judul2}>Sumber Belajar</div>
                 <div className={styles.subjudul2}>
                     &quot;Hai anak - anak, pada halaman ini kalian akan belajar tentang organ dan alur pernapasan manusia. Apa sih bernapas itu? Bernapas adalah proses mulai dari pengambilan oksigen sampai pengeluaran karbondioksida. <br /> <br />Manusia dalam bernapas menghirup oksigen dan membuang karbondioksida.
                     Nah.. sekarang ada pertanyaan lagi, Apa saja organ - organ pernapasan pada manusia? Ya, ada Hidung, Faring, Laring, Trakea, Bronkus, Bronkiolus, Paru - paru, Alveolus, dan Diafragma. Nah anak - anak itu tadi organ - organ pernapasan manusia yuk - yuk kita mulai belajar.&quot;
                 </div>
             </LayoutHalamanAtas>
-            <main className={styles.main} >
+            <main className={styles.main} id='pilihanuser' >
                 <div className={styles.judul}>
                     <h1>
                         ORGAN PERNAPASAN MANUSIA
