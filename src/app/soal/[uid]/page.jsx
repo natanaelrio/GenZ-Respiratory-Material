@@ -19,7 +19,7 @@ async function getSoalABCD() {
 export default async function Soalnya({ params }) {
     const questions = await getSoalABCD();
     return (
-        <LayoutHeaderFooter kondisi={true}>
+        <LayoutHeaderFooter kondisi={true} atas={false}>
             <MainSoal
                 uidparam={params.uid}
                 kondisiAkhir={true}

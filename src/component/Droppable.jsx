@@ -10,7 +10,7 @@ const Droppable = ({ id, items }) => {
     return (
         <SortableContext id={id} items={items} strategy={rectSortingStrategy}>
             <div className={styles.droppableStyle}>
-                <div className={styles.judul}>{id == 'group1' ? 'Acak' : 'Uruttan'}</div>
+                <div className={styles.judul}>{id == 'group1' ? 'Organ Pernapasan Manusia' : 'Urutan Organ Pernapasan Manusia'}</div>
                 <div ref={setNodeRef} className={styles.isi}>
                     {items.map((item) => (
                         <SortableItem key={item} id={item} />

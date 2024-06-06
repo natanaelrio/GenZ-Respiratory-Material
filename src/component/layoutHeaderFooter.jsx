@@ -9,7 +9,7 @@ import { useBearStore } from '@/zustand/store'
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-export default function LayoutHeaderFooter({ children, kondisi, bg }) {
+export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
     const router = useRouter()
     const setOpenSoal = useBearStore((state) => state.setOpenSoal)
     const [open, setOpen] = useState(false)
@@ -51,7 +51,7 @@ export default function LayoutHeaderFooter({ children, kondisi, bg }) {
                     <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
                         <a href={'/soal/1'}>Soal Latihan</a>
                     </div>
-                    {kondisi && <button onClick={() => router.back()}>
+                    {atas && <button onClick={() => router.back()}>
                         <FaArrowLeft size={17} color="black" />
                     </button>}
                 </div>

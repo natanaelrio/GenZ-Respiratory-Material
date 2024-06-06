@@ -1,5 +1,5 @@
 import HalamanMateri from '@/component/halamanMateri'
-import VideoPembelajaran from '@/component/videoPembelajaran'
+// import VideoPembelajaran from '@/component/videoPembelajaran'
 import LayoutHeaderFooter from '@/component/layoutHeaderFooter';
 
 export const metadata = {
@@ -7,11 +7,12 @@ export const metadata = {
   description: 'Materi ORGAN PERNAFASAN MANUSIA',
 }
 
-export default function Materi() {
+
+export default async function Materi() {
   return (
-    <LayoutHeaderFooter judul={''} kondisi={false} >
-      <HalamanMateri />
-      <VideoPembelajaran />
+    <LayoutHeaderFooter judul={''} kondisi={false}  >
+      <HalamanMateri  />
+      {/* <VideoPembelajaran /> */}
     </LayoutHeaderFooter>
   )
 }

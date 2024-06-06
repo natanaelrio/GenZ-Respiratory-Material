@@ -40,15 +40,12 @@
 }
 
 .salahhh {
-    color: var(--colordua);
+    color: var(--colorhover);
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    padding: 20px;
+    padding: 10px;
 }
-
-
-
 
 .droppableStyle {
     display: flex;
@@ -58,6 +55,7 @@
     background-color: whitesmoke;
     padding: 10px;
     position: relative;
+    width: 230px;
 }
 
 .droppableStyle .isi {
@@ -73,7 +71,7 @@
 .droppableStyle .kotakshadow {
     position: absolute;
     border-radius: 5px;
-    top: 39px;
+    top: 57px;
     right: 10px;
     padding: 22px 10px;
     width: 210px;
