@@ -8,14 +8,9 @@ export default function PilihanUser() {
     const setOpenSoal = useBearStore((state) => state.setOpenSoal)
 
     return (
-        <div className={styles.container} id='pilihanuser'>
+        <div className={styles.container} >
             <div className={styles.atas}>
-                {/* <div className={styles.judulatas}>Hai, Mari Mulai Belajar 😁</div> */}
                 <div className={styles.subjudulatas}>Nah, pada bagian ini kalian dapat memasuki halaman sumber belajar dan halaman latihan soal, Let&apos;s Gooo!!!</div>
-                {/* <div className={styles.subjudulatas}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, at!</div>
-                <div className={styles.iconatas}>
-                    <FaArrowDown size={50} />
-                </div> */}
             </div>
             <div className={styles.isi}>
                 <a href='/materi' className={styles.kolom1}>
@@ -32,13 +27,6 @@ export default function PilihanUser() {
                         <div className={styles.icon}><FcIdea /></div>
                     </div>
                 </a>
-                {/* <div className={styles.kolom3}>
-                    <div className={styles.dalam3} onClick={() => { router.push('/soalpertama/1'), setOpenSoal(false) }}>
-                        <div className={styles.judul}>Lorem, ipsum.</div>
-                        <div className={styles.subjudul}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corporis!</div>
-                        <div className={styles.icon}>😁</div>
-                    </div>
-                </div> */}
             </div>
         </div>
     )
