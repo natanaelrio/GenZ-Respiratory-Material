@@ -58,7 +58,7 @@ export default function HalamanMateri({ dataArtikel }) {
                 </div>
             </LayoutHalamanAtas>
 
-            <main className={styles.main} id='pilihanuser' >
+            <main className={styles.main} >
                 <div className={styles.judul}>
                     <h1>
                         ORGAN PERNAPASAN MANUSIA
@@ -69,7 +69,7 @@ export default function HalamanMateri({ dataArtikel }) {
                 </div>
 
                 <div className={styles.grid} style={open ? { gridTemplateColumns: '1fr 1fr' } : {}}>
-                    <div className={styles.gambarluar} style={{ gridArea: gridAreaGambar }}>
+                    <div className={styles.gambarluar} >
                         <div className={styles.gambar} >
                             <Image src={`${process.env.NEXT_PUBLIC_URL}/main4.png`} width={1000} height={600} alt='main'></Image>
                             <div className={styles.hidung} onClick={() => HandleDetail(1)}>1. HIDUNG</div>
