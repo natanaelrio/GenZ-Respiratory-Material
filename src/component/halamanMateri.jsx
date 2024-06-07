@@ -51,7 +51,7 @@ export default function HalamanMateri({ dataArtikel }) {
                 katabawah={`Let` + `'` + `s goo!!`}>
                 <div className={styles.judul2}>Sumber Belajar</div>
                 <div className={styles.subjudul2}>
-                    &quot;Hai anak - anak, pada halaman ini kalian akan belajar tentang organ dan alur pernapasan manusia. Apa sih pernapasan itu?        Pernapasan atau bisa disebut juga dengan respirasi yang dapat didefinisikan sebagai sebuah proses pengambilan oksigen dan pelepasan karbohidrat dan penggunaan energi yang ada di dalam tubuh.
+                    &quot;Hai anak - anak, pada halaman ini kalian akan belajar tentang organ dan alur pernapasan manusia. Apa sih pernapasan itu?        Pernapasan atau bisa disebut juga dengan respirasi yang dapat didefinisikan sebagai sebuah proses pengambilan oksigen dan pelepasan karbondioksida dan penggunaan energi yang ada di dalam tubuh.
                     Ketika manusia bernapas, berarti sedang terjadi proses masuknya oksigen ke dalam tubuh dan pelepasan karbondioksida keluar tubuh. Pertukaran antara oksigen dan karbondioksida tersebut terjadi di dalam darah manusia.
                     Pernapasan adalah sebuah proses yang terjadi secara otomatis di dalam tubuh manusia. Bahkan ketika kita tertidur sekalipun.  <br /> <br />Manusia dalam bernapas menghirup oksigen dan membuang karbondioksida.
                     Nah.. sekarang ada pertanyaan lagi, Apa saja organ - organ pernapasan pada manusia? Ya, ada Hidung, Faring, Laring, Trakea, Bronkus, Bronkiolus, Paru - paru, Alveolus, dan Diafragma. Nah anak - anak itu tadi organ - organ pernapasan manusia yuk - yuk kita mulai belajar.&quot;

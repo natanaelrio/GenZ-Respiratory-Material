@@ -148,7 +148,7 @@ function DNDnew() {
         <>
             <div className={styles.judulatas}>6. Urutkan Gambar Berikut 😁</div>
             <div className={styles.subjudul}>
-                Urutkan gambar-gambar organ pernapasan dibawah ini, pindahkan gambar dari kolom kiri ke kolom yang kanan secara berurutan
+                Urutkan gambar-gambar organ pernapasan dibawah ini, pindahkan gambar dari kolom kiri ke kolom yang kanan secara berurutan.
             </div>
             <DndContext
                 sensors={sensors}
