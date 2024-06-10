@@ -475,6 +475,10 @@
     /* object-fit: contain; */
 }
 
+.artikelluarluar:nth-child(1) {
+    display: none;
+}
+
 .artikelluarluar {
     width: 100%;
     display: flex;
@@ -505,7 +509,7 @@
 
 .artikel>.judulartikel {
     font-weight: 1000;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
     line-height: normal;
 }
@@ -524,6 +528,31 @@
     border-radius: 10px;
 }
 
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.bagianatasartikel {
+    width: 1100px;
+    text-align: center;
+}
+
+.judulartikelatas {
+    font-weight: 1000;
+    font-size: 60px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.deskripsiartikelatas {
+    line-height: normal;
+    font-weight: 500;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
 

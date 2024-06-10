@@ -35,9 +35,19 @@ export default function HalamanMateri({ dataArtikel }) {
     const [DataArtikel, setDataArtikel] = useState([])
     useEffect(() => {
         const Fetchdata = async () => {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/dataartikel.json`)
+            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/dataartikel1.json`)
             const data = await res.json()
             setDataArtikel(data)
+        }
+        Fetchdata()
+    }, [])
+
+    const [DataArtikel2, setDataArtikel2] = useState([])
+    useEffect(() => {
+        const Fetchdata = async () => {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/dataartikel2.json`)
+            const data = await res.json()
+            setDataArtikel2(data)
         }
         Fetchdata()
     }, [])
@@ -101,8 +111,48 @@ export default function HalamanMateri({ dataArtikel }) {
             </main>
 
 
+            <div className={styles.container}>
+                <div className={styles.bagianatasartikel}>
+                    <div className={styles.judulartikelatas}>
+                        Cara Memelihara <br />Organ Pernapasan Manusia
+                    </div>
+                    <div className={styles.deskripsiartikelatas}>
+                        Sebagai manusia yang ingin sehat sepanjang umurnya, tentunya harus tetap menjaga kesehatan organ-organ tubuhnya. Begitu juga pada organ-organ pernapasan. Berikut adalah cara memelihara organ pernapasan.
+                    </div>
+                </div>
+            </div>
 
             {DataArtikel.map((dataku, i) => {
+                return (
+                    <div className={styles.artikelluarluar} key={i} style={{ background: dataku.warna }}>
+                        <div className={styles.artikelluar}>
+                            <div className={styles.artikel} style={{ gridArea: dataku.gridartikel }}>
+                                <div className={styles.judulartikel}>
+                                    {dataku?.judul}
+                                </div>
+                                <div className={styles.isiartikel} dangerouslySetInnerHTML={{ __html: dataku?.detail }} >
+                                </div>
+                            </div>
+                            <div className={styles.gambarartikel} style={{ gridArea: dataku.gridgambar }} >
+                                <Image src={`${process.env.NEXT_PUBLIC_URL}/${dataku?.urlgambar}`} width={300} height={300} alt={dataku?.judul}></Image>
+                            </div>
+                        </div>
+                    </div>
+
+                )
+            })}
+            <div className={styles.container}>
+                <div className={styles.bagianatasartikel}>
+                    <div className={styles.judulartikelatas}>
+                        Proses Pernapasan Manusia
+                    </div>
+                    <div className={styles.deskripsiartikelatas}>
+                        Manusia memiliki dua mekanisme pernapasan. Ada pernapasan dada dan juga pernapasan perut. Lalu bagaimana perbedaan keduanya? Berikut adalah penjelasan mekanisme pernapasan manusia.
+                    </div>
+                </div>
+            </div>
+
+            {DataArtikel2.map((dataku, i) => {
                 return (
                     <div className={styles.artikelluarluar} key={i} style={{ background: dataku.warna }}>
                         <div className={styles.artikelluar}>
