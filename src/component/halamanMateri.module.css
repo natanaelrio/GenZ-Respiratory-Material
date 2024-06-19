@@ -466,7 +466,7 @@
 }
 
 .gambaralurpernafasan {
-    width: 100%;
+    width: 70%;
 }
 
 .gambaralurpernafasan img {
@@ -484,7 +484,7 @@
     display: flex;
     justify-content: center;
     background-color: aliceblue;
-    padding: 50px 0;
+    padding: 20dvh 0;
     color: var(--colorsoal);
 }
 
@@ -509,7 +509,7 @@
 
 .artikel>.judulartikel {
     font-weight: 1000;
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 20px;
     line-height: normal;
 }

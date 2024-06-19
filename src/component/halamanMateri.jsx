@@ -84,19 +84,15 @@ export default function HalamanMateri({ dataArtikel }) {
                             <Image src={`${process.env.NEXT_PUBLIC_URL}/main4.png`} width={1000} height={600} alt='main'></Image>
                             <div className={styles.hidung} onClick={() => HandleDetail(1)}>1. HIDUNG</div>
                             <div className={styles.laring} onClick={() => HandleDetail(2)}>3. LARING atau PANGKAL TENGGOROKAN</div>
-                            <div className={styles.paruparu} onClick={() => HandleDetail(3)}>7. PARU-PARU</div>
+                            <div className={styles.paruparu} onClick={() => HandleDetail(3)}>5. PARU-PARU</div>
                             <div className={styles.faring} onClick={() => HandleDetail(4)}>2. FARING atau TENGGOROKAN</div>
                             <div className={styles.trakea} onClick={() => HandleDetail(5)}>4. TRAKEA atau BATANG TENGGOROKAN</div>
-                            <div className={styles.bronkus} onClick={() => HandleDetail(6)}>5. BRONKUS atau CABANG BATANG TENGGOROKAN</div>
-                            <div className={styles.bronkiolus} onClick={() => HandleDetail(7)}>6. BRONKIOLUS atau POHON BRONKUS</div>
+                            <div className={styles.bronkus} onClick={() => HandleDetail(6)}>6. BRONKUS atau CABANG BATANG TENGGOROKAN</div>
+                            <div className={styles.bronkiolus} onClick={() => HandleDetail(7)}>7. BRONKIOLUS atau POHON BRONKUS</div>
                             <div className={styles.alveolus} onClick={() => HandleDetail(8)}>8. ALVEOLUS atau KANTUNG UDARA</div>
                             <div className={styles.diafragma} onClick={() => HandleDetail(9)}>9. DIAFRAGMA</div>
                         </div>
                     </div>
-                    {/* <div className={styles.texttambahan}>
-                        &quot;Hai anak - anak, pada halaman ini kalian akan belajar tentang organ dan alur pernapasan manusia. Apa sih bernapas itu? Bernapas adalah proses mulai dari pengambilan oksigen sampai pengeluaran karbondioksida. <br />Manusia dalam bernapas menghirup oksigen dan membuang karbondioksida.
-                        Nah.. sekarang ada pertanyaan lagi, Apa saja organ - organ pernapasan pada manusia? Ya, ada Hidung, Faring, Laring, Trakea, Bronkus, Bronkiolus, Paru - paru, Alveolus, dan Diafragma. Nah anak - anak itu tadi organ - organ pernapasan manusia yuk - yuk kita mulai belajar.&quot;
-                    </div> */}
                     {open && <LayoutDetail
                         judul={dataDetail.judul}
                         gambar={dataDetail.urlgambar}
@@ -105,9 +101,12 @@ export default function HalamanMateri({ dataArtikel }) {
                         width={1000}
                     />}
                 </div>
-                {/* <div className={styles.soal}>
-                        <button onClick={() => router.push(`/soal/1`)}>Soal</button>
-                    </div> */}
+
+                <div className={styles.alurpernapasan}>
+                    <div className={styles.gambaralurpernafasan} style={{ width: '100%' }}>
+                        <Image src={`${process.env.NEXT_PUBLIC_URL}/bawahorgan.png`} width={2000} height={600} alt='main'></Image>
+                    </div>
+                </div>
             </main>
 
 
@@ -134,7 +133,7 @@ export default function HalamanMateri({ dataArtikel }) {
                                 </div>
                             </div>
                             <div className={styles.gambarartikel} style={{ gridArea: dataku.gridgambar }} >
-                                <Image src={`${process.env.NEXT_PUBLIC_URL}/${dataku?.urlgambar}`} width={300} height={300} alt={dataku?.judul}></Image>
+                                <Image src={`${process.env.NEXT_PUBLIC_URL}/${dataku?.urlgambar}`} width={500} height={500} alt={dataku?.judul}></Image>
                             </div>
                         </div>
                     </div>
@@ -152,6 +151,12 @@ export default function HalamanMateri({ dataArtikel }) {
                 </div>
             </div>
 
+            <div className={styles.alurpernapasan}>
+                <div className={styles.gambaralurpernafasan}>
+                    <Image src={`${process.env.NEXT_PUBLIC_URL}/alurpenafasan.png`} width={2000} height={600} alt='main'></Image>
+                </div>
+            </div>
+
             {DataArtikel2.map((dataku, i) => {
                 return (
                     <div className={styles.artikelluarluar} key={i} style={{ background: dataku.warna }}>
@@ -164,7 +169,7 @@ export default function HalamanMateri({ dataArtikel }) {
                                 </div>
                             </div>
                             <div className={styles.gambarartikel} style={{ gridArea: dataku.gridgambar }} >
-                                <Image src={`${process.env.NEXT_PUBLIC_URL}/${dataku?.urlgambar}`} width={300} height={300} alt={dataku?.judul}></Image>
+                                <Image src={`${process.env.NEXT_PUBLIC_URL}/${dataku?.urlgambar}`} width={500} height={500} alt={dataku?.judul}></Image>
                             </div>
                         </div>
                     </div>
@@ -175,22 +180,7 @@ export default function HalamanMateri({ dataArtikel }) {
 
 
 
-            <div className={styles.alurpernapasan}>
-                <div className={styles.tandapanah}>
-                    <div className={styles.iconatas}>
-                        <FaArrowDown size={30} />
-                    </div>
-                    <div className={styles.judul}>
-                        Geser kebawah, untuk belajar alur pernapasan manusia
-                    </div>
-                    <div className={styles.iconatas}>
-                        <FaArrowDown size={30} />
-                    </div>
-                </div>
-                <div className={styles.gambaralurpernafasan}>
-                    <Image src={`${process.env.NEXT_PUBLIC_URL}/alurpenafasan.png`} width={2000} height={600} alt='main'></Image>
-                </div>
-            </div>
+
         </>
 
     )
