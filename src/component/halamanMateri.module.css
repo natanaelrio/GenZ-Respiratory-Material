@@ -187,12 +187,12 @@
 
 
 .gambar {
-    height: 72dvh;
+    height: 500px;
     position: relative;
 }
 
 .gambar img {
-    height: 72dvh;
+    height: 500px;
     object-fit: contain;
     object-position: center;
 }
