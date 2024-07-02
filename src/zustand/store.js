@@ -12,4 +12,7 @@ export const useBearStore = create((set) => ({
 
     openTerimaKasih: false,
     setOpenTrimaKasih: (e) => set(() => ({ openTerimaKasih: e })),
+
+    cek: false,
+    setCek: (e) => set(() => ({ cek: e })),
 }))

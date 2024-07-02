@@ -60,6 +60,44 @@
     gap: 20px;
     font-weight: 700;
     align-items: center;
+    position: relative;
+}
+
+.header .kanandesktop .kotakdropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 31px;
+    right: -5px;
+    background-color: #e5e5e5;
+    padding: 10px 20px;
+    border: 2px solid var(--colordua);
+    /* border-radius: 7px; */
+    z-index: 10;
+    width: max-content;
+    color: var(--colordua);
+}
+
+
+.header .kanandesktop .kotakdropdown a {
+    color: var(--colordua);
+
+}
+
+.header .kanandesktop .kotakdropdown a:hover {
+    cursor: pointer;
+    background-color: rgb(243, 243, 243);
+    /* border-bottom: 1px solid black; */
+}
+
+.kotakhitam {
+    position: absolute;
+    /* background-color: black; */
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
 }
 
 .close {

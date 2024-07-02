@@ -10,7 +10,7 @@ export default function PilihanUser() {
     return (
         <div className={styles.container} >
             <div className={styles.atas}>
-                <div className={styles.subjudulatas}>Nah, pada bagian ini kalian dapat memasuki halaman sumber belajar dan halaman latihan soal, Let&apos;s Gooo!!!</div>
+                <div className={styles.subjudulatas}>Nah, pada bagian ini kalian dapat memasuki halaman sumber belajar dan halaman latihan soal, Let&apos;s Go!!!</div>
             </div>
             <div className={styles.isi}>
                 <a href='/materi' className={styles.kolom1}>

@@ -13,6 +13,7 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
     const router = useRouter()
     const setOpenSoal = useBearStore((state) => state.setOpenSoal)
     const [open, setOpen] = useState(false)
+    const [isHovered, setIsHovered] = useState(false);
 
     return (
         <div className={styles.container} style={bg ? { background: 'white' } : {}}>
@@ -35,6 +36,7 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                         <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
                             <a href={'/soal/1'}>Soal Latihan</a>
                         </div>
+
                         {kondisi && <button onClick={() => router.back()}>
                             <FaArrowLeft size={17} color="black" />
                         </button>}
@@ -45,7 +47,11 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                     <div className={styles.list}>
                         <Link href={'/'}>Halaman Utama</Link>
                     </div>
-                    <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
+                    <div className={styles.list}
+                        // onClick={() => router.push('/')}
+                        onMouseEnter={() => setIsHovered(true)}
+
+                    >
                         <a href={'/materi'}>Sumber Belajar</a>
                     </div>
                     <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
@@ -54,7 +60,22 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                     {atas && <button onClick={() => router.back()}>
                         <FaArrowLeft size={17} color="black" />
                     </button>}
+                    {isHovered && <div className={styles.kotakdropdown}
+                    >
+                        {/* <div className={styles.kotaktambahan}></div> */}
+                        <Link target="_blank" href={'/materisatu'}>Organ Pernapasan Manusia</Link>
+                        <Link target="_blank" href={'/materidua'}>Sistem Pernapasan Manusia</Link>
+                        <Link target="_blank" href={'/materitiga'}>Proses Pernapasan Manusia</Link>
+                        <Link target="_blank" href={'/materiempat'}>Pernapasan Dada dan Perut</Link>
+                        <Link target="_blank" href={'/materilima'}>Cara Memelihara Organ pernapasan Manusia</Link>
+                    </div>}
+
                 </div>
+                {isHovered && <div className={styles.kotakhitam}
+                    onMouseLeave={() => setIsHovered(true)}
+                    onClick={() => setIsHovered(false)}
+                ></div>}
+
             </header>
             {children}
             <Footer kondisi={kondisi} />
