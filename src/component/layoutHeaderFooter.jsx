@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useBearStore } from '@/zustand/store'
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoGameControllerOutline } from "react-icons/io5";
 
 export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
     const router = useRouter()
@@ -36,6 +37,9 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                         <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
                             <a href={'/soal/1'}>Soal Latihan</a>
                         </div>
+                        <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
+                            <a href={'/game'}>Tantangan</a>
+                        </div>
 
                         {kondisi && <button onClick={() => router.back()}>
                             <FaArrowLeft size={17} color="black" />
@@ -56,6 +60,9 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                     </div>
                     <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
                         <a href={'/soal/1'}>Soal Latihan</a>
+                    </div>
+                    <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
+                        <a href={'/game'}>Tantangan<IoGameControllerOutline /></a>
                     </div>
                     {atas && <button onClick={() => router.back()}>
                         <FaArrowLeft size={17} color="black" />

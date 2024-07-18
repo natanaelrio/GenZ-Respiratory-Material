@@ -3,6 +3,7 @@ import styles from '@/component/pilihanuser.module.css'
 import { useBearStore } from '@/zustand/store'
 import { FaBookOpen } from "react-icons/fa";
 import { FcIdea } from "react-icons/fc";
+import { IoGameControllerOutline } from "react-icons/io5";
 
 export default function PilihanUser() {
     const setOpenSoal = useBearStore((state) => state.setOpenSoal)
@@ -10,7 +11,7 @@ export default function PilihanUser() {
     return (
         <div className={styles.container} >
             <div className={styles.atas}>
-                <div className={styles.subjudulatas}>Nah, pada bagian ini kalian dapat memasuki halaman sumber belajar dan halaman latihan soal, Let&apos;s Go!!!</div>
+                <div className={styles.subjudulatas}>Nah, pada bagian ini kalian dapat memasuki halaman sumber belajar, halaman latihan soal dan tantangan, Let&apos;s Go!!!</div>
             </div>
             <div className={styles.isi}>
                 <a href='/materi' className={styles.kolom1}>
@@ -25,6 +26,13 @@ export default function PilihanUser() {
                         <div className={styles.judul}>Soal Latihan</div>
                         <div className={styles.subjudul}>Dalam fitur ini terdapat soal-soal tentang Organ Sistem Pernapasan Manusia yang dapat digunakan untuk berlatih.</div>
                         <div className={styles.icon}><FcIdea /></div>
+                    </div>
+                </a>
+                <a href='/game' className={styles.kolom3}>
+                    <div className={styles.dalam3} onClick={() => { setOpenSoal(false) }}>
+                        <div className={styles.judul}>Tantangan</div>
+                        <div className={styles.subjudul}>Dalam fitur ini terdapat game tentang organ dan sistem pernapasan.  Mari selesaikan.</div>
+                        <div className={styles.icon}> <IoGameControllerOutline /></div>
                     </div>
                 </a>
             </div>

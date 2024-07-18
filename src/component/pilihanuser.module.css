@@ -26,6 +26,7 @@
 
 .kolom1 {
     padding: 20px;
+    width: 33.33%;
 }
 
 .dalam {
@@ -53,8 +54,9 @@
 }
 
 .dalam:hover .icon {
-    opacity: 1;
-    z-index: 1;
+    transition: all 0.3s ease;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 
@@ -84,17 +86,52 @@
 }
 
 .dalam2:hover .icon {
-    opacity: 1;
-    z-index: 1;
+    transition: all 0.3s ease;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 .kolom2 {
     padding: 20px;
+    width: 33.33%
+}
+
+
+
+
+.dalam3 {
+    height: 250px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #ffe97d;
+    border-radius: 12px;
+    position: relative;
+    background-color: #f3febc;
+    border-right: 7px solid #ffe97d;
+    border-bottom: 7px solid #ffe97d;
+    cursor: pointer;
+}
+
+.dalam3 .icon {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    font-size: 90px;
+    z-index: 1;
+    opacity: 0.2;
+    display: flex;
+}
+
+.dalam3:hover .icon {
+    transition: all 0.3s ease;
+    opacity: 0.1;
+    z-index: -1;
 }
 
 
 .kolom3 {
     padding: 20px;
+    width: 33.33%
 }
 
 

@@ -1,7 +1,6 @@
 import styles from '@/component/layoutHeaderFooter.module.css'
 import Link from 'next/link'
 import { MdOutlinePhoneCallback } from "react-icons/md";
-import { CiMail } from "react-icons/ci";
 
 export default function Footer({ kondisi }) {
     return (

@@ -45,3 +45,22 @@ a {
   justify-content: space-between;
   align-items: center;
 } */
+
+#lwsouterdiv7773882 {
+  z-index: 0 !important;
+  width: 1000px !important;
+  height: 700px !important;
+  display: none;
+}
+
+.ws-parent {
+  height: 716px;
+  width: 974px;
+}
+
+
+
+
+/* #lwsiframe7773882 {
+
+} */
