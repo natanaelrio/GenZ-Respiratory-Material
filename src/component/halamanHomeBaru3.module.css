@@ -1,6 +1,6 @@
 .home {
     background-color: var(--colorsoal);
-    height: fit-content;
+    height: calc(100dvh - 157px);
     width: 100%;
     padding: 20px 130px;
     color: var(--colorputih);
