@@ -99,7 +99,7 @@ export default function Footer({ kondisi }) {
                     Copyright 2024 © Situs Belajar Online Masa Kini
                 </p>
                 <p>
-                    Ide: Handoko Wibisono, Pembimbing: Dr. Adi Winanto, M.Pd, Dev: natanaelriowijaya
+                    Kreator: Handoko Wibisono, Pembimbing: Dr. Adi Winanto, M.Pd
                 </p>
             </div>
         </footer>

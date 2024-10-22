@@ -30,7 +30,7 @@
 }
 
 .dalam {
-    height: 250px;
+    min-height: 350px;
     width: 100%;
     padding: 20px;
     border: 2px solid #676cb0;
@@ -63,7 +63,8 @@
 
 
 .dalam2 {
-    height: 250px;
+    min-height: 350px;
+    /* height: 250px; */
     width: 100%;
     padding: 20px;
     border: 2px solid #ff7d8d;
@@ -100,7 +101,8 @@
 
 
 .dalam3 {
-    height: 250px;
+    min-height: 350px;
+    /* height: 250px; */
     width: 100%;
     padding: 20px;
     border: 2px solid #ffe97d;
