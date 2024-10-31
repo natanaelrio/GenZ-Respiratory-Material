@@ -27,6 +27,7 @@ function DNDnew() {
         setCurrentQuestion(currentQuestion - 1)
     }
     const [kondisi, setKondisi] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
 
     const shuffleArray = (array) => {
@@ -45,14 +46,15 @@ function DNDnew() {
         group2: []
     });
 
-    const tasksReal = ["1", "2", "3", "4", "5", "6", "7", "8"]
+    const tasksReal = ["1", "2", "3", "4", "5", "6", "8", "7"]
 
     const array1 = tasksReal.toString().replace(/,/g, '')
     const array2 = items.group2.toString().replace(/,/g, '')
 
     const handleDND = () => {
+        array1 === array2 ? setKondisi(false) : setKondisi(true)
+        array1 === array2 ? setIsLoading(true) : setKondisi(true)
         array1 === array2 ? router.push('/') : setKondisi(true)
-        // array1 === array2 ? console.log(true) : console.log(false)
     }
 
 
@@ -166,8 +168,8 @@ function DNDnew() {
             </DndContext>
             {kondisi && <div className={styles.salahhh}>Belum Tepat yaaa...&nbsp; <BiSolidDislike /></div>}
             <div className={styles.luarbutton}>
-                <FaArrowAltCircleLeft className={styles.iconbawah} onClick={handleKembali} />
-                <button onClick={handleDND}>Selesai</button>
+                {/* <FaArrowAltCircleLeft className={styles.iconbawah} onClick={handleKembali} /> */}
+                <button onClick={handleDND}>{isLoading ? 'Loading' : 'Submit'}</button>
             </div>
         </>
     );
