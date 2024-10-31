@@ -16,8 +16,11 @@ import { arrayMove, insertAtIndex, removeAtIndex } from "@/utils/array";
 import { BiSolidDislike } from "react-icons/bi";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import styles from '@/component/dnd.module.css'
+import { useRouter } from "next/navigation";
 
 function DNDnew() {
+
+    const router = useRouter()
     const setCurrentQuestion = useBearStore((state) => state.setCurrentQuestion)
     const currentQuestion = useBearStore((state) => state.currentQuestion)
     const handleKembali = () => {
@@ -34,7 +37,7 @@ function DNDnew() {
         return array;
     }
 
-    const randomObjects = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    const randomObjects = ["1", "2", "3", "4", "5", "6", "7", "8"]
     const acakObject = shuffleArray(randomObjects)
 
     const [items, setItems] = useState({
@@ -42,13 +45,13 @@ function DNDnew() {
         group2: []
     });
 
-    const tasksReal = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    const tasksReal = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
     const array1 = tasksReal.toString().replace(/,/g, '')
     const array2 = items.group2.toString().replace(/,/g, '')
 
     const handleDND = () => {
-        array1 === array2 ? setCurrentQuestion(6) : setKondisi(true)
+        array1 === array2 ? router.push('/') : setKondisi(true)
         // array1 === array2 ? console.log(true) : console.log(false)
     }
 
@@ -146,9 +149,9 @@ function DNDnew() {
 
     return (
         <>
-            <div className={styles.judulatas}>6. Urutkan Gambar Berikut 😁</div>
+            <div className={styles.judulatas}>Urutkan Gambar Berikut 😁</div>
             <div className={styles.subjudul}>
-                Urutkan gambar-gambar organ pernapasan dibawah ini, pindahkan gambar dari kolom kiri ke kolom yang kanan secara berurutan.
+                Urutkan gambar-gambar sistem pernapasan dibawah ini, pindahkan gambar dari kolom kiri ke kolom yang kanan secara berurutan.
             </div>
             <DndContext
                 sensors={sensors}
@@ -164,7 +167,7 @@ function DNDnew() {
             {kondisi && <div className={styles.salahhh}>Belum Tepat yaaa...&nbsp; <BiSolidDislike /></div>}
             <div className={styles.luarbutton}>
                 <FaArrowAltCircleLeft className={styles.iconbawah} onClick={handleKembali} />
-                <button onClick={handleDND}>Lanjutkan</button>
+                <button onClick={handleDND}>Selesai</button>
             </div>
         </>
     );

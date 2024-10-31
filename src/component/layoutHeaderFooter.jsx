@@ -15,6 +15,7 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
     const setOpenSoal = useBearStore((state) => state.setOpenSoal)
     const [open, setOpen] = useState(false)
     const [isHovered, setIsHovered] = useState(false);
+    const [isHoveredLatihan, setIsHoveredLatihan] = useState(false);
 
     return (
         <div className={styles.container} style={bg ? { background: 'white' } : {}}>
@@ -54,11 +55,10 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                     <div className={styles.list}
                         // onClick={() => router.push('/')}
                         onMouseEnter={() => setIsHovered(true)}
-
                     >
                         <a href={'/materi'}>Sumber Belajar</a>
                     </div>
-                    <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
+                    <div className={styles.list} onMouseEnter={() => setIsHoveredLatihan(true)}>
                         <a href={'/soal/1'}>Soal Latihan</a>
                     </div>
                     <div className={styles.list} onClick={() => { setOpenSoal(false) }}>
@@ -67,6 +67,8 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                     {atas && <button onClick={() => router.back()}>
                         <FaArrowLeft size={17} color="black" />
                     </button>}
+
+
                     {isHovered && <div className={styles.kotakdropdown}
                     >
                         {/* <div className={styles.kotaktambahan}></div> */}
@@ -76,11 +78,21 @@ export default function LayoutHeaderFooter({ children, kondisi, bg, atas }) {
                         <Link target="_blank" href={'/materiempat'}>Pernapasan Dada dan Perut</Link>
                         <Link target="_blank" href={'/materilima'}>Cara Memelihara Organ pernapasan Manusia</Link>
                     </div>}
+                    {isHoveredLatihan && <div className={styles.kotakdropdownsoallatihan}
+                    >
+                        {/* <div className={styles.kotaktambahan}></div> */}
+                        <Link target="_blank" href={'/soal/1'}>Soal ABC</Link>
+                        <Link target="_blank" href={'/dnd'}>Soal Drag n Drop</Link>
+                    </div>}
 
                 </div>
                 {isHovered && <div className={styles.kotakhitam}
                     onMouseLeave={() => setIsHovered(true)}
                     onClick={() => setIsHovered(false)}
+                ></div>}
+                {isHoveredLatihan && <div className={styles.kotakhitam}
+                    onMouseLeave={() => setIsHoveredLatihan(true)}
+                    onClick={() => setIsHoveredLatihan(false)}
                 ></div>}
 
             </header>

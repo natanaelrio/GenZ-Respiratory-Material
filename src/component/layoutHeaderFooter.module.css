@@ -91,6 +91,33 @@
     /* border-bottom: 1px solid black; */
 }
 
+.header .kanandesktop .kotakdropdownsoallatihan {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 31px;
+    right: -5px;
+    background-color: #e5e5e5;
+    padding: 10px 20px;
+    border: 2px solid var(--colordua);
+    /* border-radius: 7px; */
+    z-index: 10;
+    width: max-content;
+    color: var(--colordua);
+}
+
+
+.header .kanandesktop .kotakdropdownsoallatihan a {
+    color: var(--colordua);
+
+}
+
+.header .kanandesktop .kotakdropdownsoallatihan a:hover {
+    cursor: pointer;
+    background-color: rgb(243, 243, 243);
+    /* border-bottom: 1px solid black; */
+}
+
 .kotakhitam {
     position: absolute;
     /* background-color: black; */
@@ -183,6 +210,10 @@
     padding: 20px 100px;
     border: 2px solid var(--colorputih);
     text-align: center;
+}
+
+.colordev {
+    color: #00000037;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

@@ -49,14 +49,14 @@ function SoalABCD({ questions }) {
     // Check if all questions have been answered
     const quizCompleted = currentQuestion === questions.length;
 
-    if (currentQuestion == 5) {
-        return (
-            <div className={styles.containerdnd}>
-                {/* <SoalDND /> */}
-                <DNDnew />
-            </div>
-        )
-    }
+        // if (currentQuestion == 5) {
+        //     return (
+        //         <div className={styles.containerdnd}>
+        //             {/* <SoalDND /> */}
+        //             <DNDnew />
+        //         </div>
+        //     )
+        // }
 
 
     return (

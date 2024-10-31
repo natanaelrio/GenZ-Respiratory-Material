@@ -7,7 +7,7 @@ import styles from '@/component/dnd.module.css'
 
 const SortableItem = (props) => {
 
-  const {
+  const { 
     attributes,
     listeners,
     setNodeRef,
@@ -46,7 +46,7 @@ const SortableItem = (props) => {
     { id: 6, title: "bronkiolus", url: 'bronkiolus.jpg' },
     { id: 7, title: "paruparu", url: 'paruparu.jpeg' },
     { id: 8, title: "alveolus", url: 'alveolus.jpg' },
-    { id: 9, title: "diafragma", url: 'diafragma.jpg' },
+    // { id: 9, title: "diafragma", url: 'diafragma.jpg' },
   ]
 
   const judul = tasksReal.filter((data) => data.id == props.id)[0].title
